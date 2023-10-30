@@ -33,6 +33,9 @@ namespace FoodFusion
 
         private void button1_Click(object sender, EventArgs e)
         {
+            frmInicio frm = new frmInicio();
+            this.Visible = false;
+            frm.ShowDialog();
 
         }
 
@@ -53,6 +56,11 @@ namespace FoodFusion
                 Left = Left + (e.X - X);
                 Top = Top + (e.Y - Y);
             }
+        }
+
+        private void PbxLogin_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
