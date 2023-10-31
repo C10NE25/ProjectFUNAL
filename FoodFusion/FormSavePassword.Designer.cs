@@ -32,6 +32,9 @@
             lblSaveP = new Label();
             btnSavePassword = new Button();
             lblEmail = new Label();
+            txtBEmail = new TextBox();
+            txtBCodigo = new TextBox();
+            lblCodigo = new Label();
             SuspendLayout();
             // 
             // PanelSaveP
@@ -54,9 +57,9 @@
             // 
             // btnSavePassword
             // 
-            btnSavePassword.Location = new Point(87, 201);
+            btnSavePassword.Location = new Point(98, 201);
             btnSavePassword.Name = "btnSavePassword";
-            btnSavePassword.Size = new Size(162, 40);
+            btnSavePassword.Size = new Size(134, 40);
             btnSavePassword.TabIndex = 2;
             btnSavePassword.Text = "Save Password";
             btnSavePassword.UseVisualStyleBackColor = true;
@@ -64,17 +67,43 @@
             // lblEmail
             // 
             lblEmail.AutoSize = true;
-            lblEmail.Location = new Point(27, 119);
+            lblEmail.Location = new Point(22, 122);
             lblEmail.Name = "lblEmail";
             lblEmail.Size = new Size(36, 15);
             lblEmail.TabIndex = 3;
             lblEmail.Text = "Email";
+            // 
+            // txtBEmail
+            // 
+            txtBEmail.Location = new Point(74, 119);
+            txtBEmail.Name = "txtBEmail";
+            txtBEmail.Size = new Size(230, 23);
+            txtBEmail.TabIndex = 4;
+            // 
+            // txtBCodigo
+            // 
+            txtBCodigo.Location = new Point(74, 157);
+            txtBCodigo.Name = "txtBCodigo";
+            txtBCodigo.Size = new Size(230, 23);
+            txtBCodigo.TabIndex = 5;
+            // 
+            // lblCodigo
+            // 
+            lblCodigo.AutoSize = true;
+            lblCodigo.Location = new Point(22, 160);
+            lblCodigo.Name = "lblCodigo";
+            lblCodigo.Size = new Size(46, 15);
+            lblCodigo.TabIndex = 6;
+            lblCodigo.Text = "Código";
             // 
             // FormSavePassword
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(365, 264);
+            Controls.Add(lblCodigo);
+            Controls.Add(txtBCodigo);
+            Controls.Add(txtBEmail);
             Controls.Add(lblEmail);
             Controls.Add(btnSavePassword);
             Controls.Add(lblSaveP);
@@ -93,5 +122,8 @@
         private Label lblSaveP;
         private Button btnSavePassword;
         private Label lblEmail;
+        private TextBox txtBEmail;
+        private TextBox txtBCodigo;
+        private Label lblCodigo;
     }
 }

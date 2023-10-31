@@ -75,6 +75,9 @@ namespace FoodFusion
 
         private void lklSavePassword_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            FormSavePassword Save = new FormSavePassword();
+            Save.Owner = this;
+            Save.ShowDialog();
 
         }
     }
