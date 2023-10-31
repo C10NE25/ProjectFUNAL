@@ -74,7 +74,8 @@
             lblSalchi1.Name = "lblSalchi1";
             lblSalchi1.Size = new Size(354, 40);
             lblSalchi1.TabIndex = 1;
-            lblSalchi1.Text = "Salchi Hotdog - La económica\r\nClásico hot dog y nuestras sabrosas papas peruanas.\r\n";
+            lblSalchi1.Text = "Salchi2222 Hotdog - La económica\r\nClásico hot dog y nuestras sabrosas papas peruanas.\r\n";
+            lblSalchi1.Click += lblSalchi1_Click;
             // 
             // lblPrecio1
             // 

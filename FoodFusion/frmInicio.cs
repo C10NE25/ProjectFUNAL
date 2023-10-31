@@ -31,5 +31,10 @@ namespace FoodFusion
         {
 
         }
+
+        private void lblSalchi1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
