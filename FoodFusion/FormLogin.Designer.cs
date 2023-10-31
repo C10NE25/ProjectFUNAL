@@ -50,9 +50,8 @@
             // 
             PbxLogin.Image = Properties.Resources.PAPA_SCREEN;
             PbxLogin.Location = new Point(0, -1);
-            PbxLogin.Margin = new Padding(3, 4, 3, 4);
             PbxLogin.Name = "PbxLogin";
-            PbxLogin.Size = new Size(350, 628);
+            PbxLogin.Size = new Size(306, 471);
             PbxLogin.SizeMode = PictureBoxSizeMode.StretchImage;
             PbxLogin.TabIndex = 0;
             PbxLogin.TabStop = false;
@@ -64,9 +63,8 @@
             PanelBarLogin.Controls.Add(btnMaximizar);
             PanelBarLogin.Controls.Add(btnMinimizar);
             PanelBarLogin.Location = new Point(0, -1);
-            PanelBarLogin.Margin = new Padding(3, 4, 3, 4);
             PanelBarLogin.Name = "PanelBarLogin";
-            PanelBarLogin.Size = new Size(655, 44);
+            PanelBarLogin.Size = new Size(573, 33);
             PanelBarLogin.TabIndex = 1;
             PanelBarLogin.Paint += PaneTopBar_Paint;
             PanelBarLogin.MouseMove += PanelBarLogin_MouseMove;
@@ -77,10 +75,9 @@
             btnCerrar.FlatStyle = FlatStyle.Flat;
             btnCerrar.ForeColor = Color.White;
             btnCerrar.Image = Properties.Resources.Boton_Cerrar;
-            btnCerrar.Location = new Point(622, 5);
-            btnCerrar.Margin = new Padding(3, 4, 3, 4);
+            btnCerrar.Location = new Point(544, 4);
             btnCerrar.Name = "btnCerrar";
-            btnCerrar.Size = new Size(26, 31);
+            btnCerrar.Size = new Size(23, 23);
             btnCerrar.TabIndex = 3;
             btnCerrar.UseVisualStyleBackColor = true;
             btnCerrar.Click += btnCerrar_Click;
@@ -91,10 +88,9 @@
             btnMaximizar.FlatStyle = FlatStyle.Flat;
             btnMaximizar.ForeColor = Color.White;
             btnMaximizar.Image = Properties.Resources.Boton_Expandir;
-            btnMaximizar.Location = new Point(584, 5);
-            btnMaximizar.Margin = new Padding(3, 4, 3, 4);
+            btnMaximizar.Location = new Point(511, 4);
             btnMaximizar.Name = "btnMaximizar";
-            btnMaximizar.Size = new Size(26, 31);
+            btnMaximizar.Size = new Size(23, 23);
             btnMaximizar.TabIndex = 4;
             btnMaximizar.UseVisualStyleBackColor = true;
             btnMaximizar.Click += btnMaximizar_Click;
@@ -105,37 +101,33 @@
             btnMinimizar.FlatStyle = FlatStyle.Flat;
             btnMinimizar.ForeColor = Color.White;
             btnMinimizar.Image = Properties.Resources.Boton_Minimizar;
-            btnMinimizar.Location = new Point(546, 5);
-            btnMinimizar.Margin = new Padding(3, 4, 3, 4);
+            btnMinimizar.Location = new Point(478, 4);
             btnMinimizar.Name = "btnMinimizar";
-            btnMinimizar.Size = new Size(26, 31);
+            btnMinimizar.Size = new Size(23, 23);
             btnMinimizar.TabIndex = 2;
             btnMinimizar.UseVisualStyleBackColor = true;
             btnMinimizar.Click += btnMinimizar_Click;
             // 
             // txtBUser
             // 
-            txtBUser.Location = new Point(378, 225);
-            txtBUser.Margin = new Padding(3, 4, 3, 4);
+            txtBUser.Location = new Point(331, 169);
             txtBUser.Name = "txtBUser";
-            txtBUser.Size = new Size(243, 27);
+            txtBUser.Size = new Size(213, 23);
             txtBUser.TabIndex = 2;
             // 
             // txtBPassword
             // 
-            txtBPassword.Location = new Point(378, 323);
-            txtBPassword.Margin = new Padding(3, 4, 3, 4);
+            txtBPassword.Location = new Point(331, 242);
             txtBPassword.Name = "txtBPassword";
             txtBPassword.PasswordChar = '*';
-            txtBPassword.Size = new Size(241, 27);
+            txtBPassword.Size = new Size(211, 23);
             txtBPassword.TabIndex = 3;
             // 
             // btnLogin
             // 
-            btnLogin.Location = new Point(415, 407);
-            btnLogin.Margin = new Padding(3, 4, 3, 4);
+            btnLogin.Location = new Point(363, 305);
             btnLogin.Name = "btnLogin";
-            btnLogin.Size = new Size(158, 40);
+            btnLogin.Size = new Size(138, 30);
             btnLogin.TabIndex = 4;
             btnLogin.Text = "Log in";
             btnLogin.UseVisualStyleBackColor = true;
@@ -145,9 +137,9 @@
             // 
             lblUser.AutoSize = true;
             lblUser.BackColor = Color.Transparent;
-            lblUser.Location = new Point(382, 201);
+            lblUser.Location = new Point(334, 151);
             lblUser.Name = "lblUser";
-            lblUser.Size = new Size(38, 20);
+            lblUser.Size = new Size(30, 15);
             lblUser.TabIndex = 5;
             lblUser.Text = "User";
             // 
@@ -155,9 +147,9 @@
             // 
             lblPassword.AutoSize = true;
             lblPassword.BackColor = Color.Transparent;
-            lblPassword.Location = new Point(382, 299);
+            lblPassword.Location = new Point(334, 224);
             lblPassword.Name = "lblPassword";
-            lblPassword.Size = new Size(70, 20);
+            lblPassword.Size = new Size(57, 15);
             lblPassword.TabIndex = 6;
             lblPassword.Text = "Password";
             lblPassword.Click += lblPassword_Click;
@@ -166,18 +158,18 @@
             // 
             lblCopyright.AutoSize = true;
             lblCopyright.ForeColor = Color.Gray;
-            lblCopyright.Location = new Point(418, 593);
+            lblCopyright.Location = new Point(366, 445);
             lblCopyright.Name = "lblCopyright";
-            lblCopyright.Size = new Size(169, 20);
+            lblCopyright.Size = new Size(135, 15);
             lblCopyright.TabIndex = 7;
             lblCopyright.Text = "Produced by final group";
             // 
             // lklRegister
             // 
             lklRegister.AutoSize = true;
-            lklRegister.Location = new Point(383, 463);
+            lklRegister.Location = new Point(335, 347);
             lklRegister.Name = "lklRegister";
-            lklRegister.Size = new Size(63, 20);
+            lklRegister.Size = new Size(49, 15);
             lklRegister.TabIndex = 8;
             lklRegister.TabStop = true;
             lklRegister.Text = "Register";
@@ -185,9 +177,9 @@
             // lklSavePassword
             // 
             lklSavePassword.AutoSize = true;
-            lklSavePassword.Location = new Point(526, 463);
+            lklSavePassword.Location = new Point(460, 347);
             lklSavePassword.Name = "lklSavePassword";
-            lklSavePassword.Size = new Size(125, 20);
+            lklSavePassword.Size = new Size(100, 15);
             lklSavePassword.TabIndex = 9;
             lklSavePassword.TabStop = true;
             lklSavePassword.Text = "Forgot Password?";
@@ -197,19 +189,19 @@
             lblTitle.AutoSize = true;
             lblTitle.Font = new Font("Tw Cen MT Condensed Extra Bold", 13F, FontStyle.Regular, GraphicsUnit.Point);
             lblTitle.ForeColor = SystemColors.ControlText;
-            lblTitle.Location = new Point(362, 103);
+            lblTitle.Location = new Point(317, 77);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(290, 26);
+            lblTitle.Size = new Size(243, 21);
             lblTitle.TabIndex = 10;
             lblTitle.Text = "Create your account or register :D!";
             // 
             // FormLogin
             // 
             AccessibleRole = AccessibleRole.SplitButton;
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(654, 625);
+            ClientSize = new Size(572, 469);
             Controls.Add(lblTitle);
             Controls.Add(lklSavePassword);
             Controls.Add(lklRegister);
@@ -222,10 +214,9 @@
             Controls.Add(PbxLogin);
             Controls.Add(PanelBarLogin);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 4, 3, 4);
             Name = "FormLogin";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form1";
+            Text = "FormLogin";
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)PbxLogin).EndInit();
             PanelBarLogin.ResumeLayout(false);

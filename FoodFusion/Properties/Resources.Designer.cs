@@ -113,9 +113,29 @@ namespace FoodFusion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Menú_Salchipapas_Ilustrado_Negro_y_Amarillo_ {
+            get {
+                object obj = ResourceManager.GetObject("Menú Salchipapas Ilustrado Negro y Amarillo ", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap PAPA_SCREEN {
             get {
                 object obj = ResourceManager.GetObject("PAPA SCREEN", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap RegisterPage {
+            get {
+                object obj = ResourceManager.GetObject("RegisterPage", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
