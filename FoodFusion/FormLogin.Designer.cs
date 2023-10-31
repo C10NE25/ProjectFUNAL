@@ -125,6 +125,7 @@
             // 
             // btnLogin
             // 
+            btnLogin.ForeColor = Color.Black;
             btnLogin.Location = new Point(363, 305);
             btnLogin.Name = "btnLogin";
             btnLogin.Size = new Size(138, 30);
