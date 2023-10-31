@@ -145,6 +145,7 @@
             // 
             txtBPasswordRegister.Location = new Point(319, 282);
             txtBPasswordRegister.Name = "txtBPasswordRegister";
+            txtBPasswordRegister.PasswordChar = '*';
             txtBPasswordRegister.Size = new Size(207, 23);
             txtBPasswordRegister.TabIndex = 6;
             // 
