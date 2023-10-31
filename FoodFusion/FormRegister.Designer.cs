@@ -62,7 +62,7 @@
             TitleRegister.AutoSize = true;
             TitleRegister.Font = new Font("Tw Cen MT Condensed Extra Bold", 13F, FontStyle.Regular, GraphicsUnit.Point);
             TitleRegister.ForeColor = Color.White;
-            TitleRegister.Location = new Point(310, 60);
+            TitleRegister.Location = new Point(312, 61);
             TitleRegister.Name = "TitleRegister";
             TitleRegister.Size = new Size(216, 21);
             TitleRegister.TabIndex = 1;
