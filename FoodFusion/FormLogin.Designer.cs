@@ -173,6 +173,7 @@
             lklRegister.TabIndex = 8;
             lklRegister.TabStop = true;
             lklRegister.Text = "Register";
+            lklRegister.LinkClicked += lklRegister_LinkClicked;
             // 
             // lklSavePassword
             // 
@@ -183,6 +184,7 @@
             lklSavePassword.TabIndex = 9;
             lklSavePassword.TabStop = true;
             lklSavePassword.Text = "Forgot Password?";
+            lklSavePassword.LinkClicked += lklSavePassword_LinkClicked;
             // 
             // lblTitle
             // 

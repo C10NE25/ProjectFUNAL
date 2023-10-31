@@ -17,9 +17,35 @@ namespace FoodFusion
             InitializeComponent();
         }
 
+        int X = 0;
+        int Y = 0;
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void PTopBarRegister_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button != MouseButtons.Left)
+            {
+                X = e.X;
+                Y = e.Y;
+            }
+            else
+            {
+                Left = Left + (e.X - X);
+                Top = Top + (e.Y - Y);
+            }
         }
     }
 }

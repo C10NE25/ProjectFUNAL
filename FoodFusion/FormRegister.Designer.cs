@@ -76,10 +76,11 @@
             btnRegister.TabIndex = 2;
             btnRegister.Text = "Register";
             btnRegister.UseVisualStyleBackColor = true;
+            btnRegister.Click += btnRegister_Click;
             // 
             // txtBName
             // 
-            txtBName.BackColor = Color.FromArgb(224, 224, 224);
+            txtBName.BackColor = Color.White;
             txtBName.Location = new Point(319, 138);
             txtBName.Name = "txtBName";
             txtBName.Size = new Size(207, 23);
@@ -87,6 +88,7 @@
             // 
             // txtBUser
             // 
+            txtBUser.BackColor = Color.White;
             txtBUser.Location = new Point(319, 185);
             txtBUser.Name = "txtBUser";
             txtBUser.Size = new Size(207, 23);
@@ -103,13 +105,14 @@
             PTopBarRegister.Name = "PTopBarRegister";
             PTopBarRegister.Size = new Size(572, 29);
             PTopBarRegister.TabIndex = 5;
+            PTopBarRegister.MouseMove += PTopBarRegister_MouseMove;
             // 
             // btnMinimizar
             // 
             btnMinimizar.FlatStyle = FlatStyle.Flat;
             btnMinimizar.ForeColor = Color.FromArgb(64, 64, 64);
             btnMinimizar.Image = Properties.Resources.Boton_Minimizar;
-            btnMinimizar.Location = new Point(453, 3);
+            btnMinimizar.Location = new Point(466, 3);
             btnMinimizar.Name = "btnMinimizar";
             btnMinimizar.Size = new Size(23, 23);
             btnMinimizar.TabIndex = 2;
@@ -120,7 +123,7 @@
             btnMaximizar.FlatStyle = FlatStyle.Flat;
             btnMaximizar.ForeColor = Color.FromArgb(64, 64, 64);
             btnMaximizar.Image = Properties.Resources.Boton_Expandir;
-            btnMaximizar.Location = new Point(490, 3);
+            btnMaximizar.Location = new Point(503, 3);
             btnMaximizar.Name = "btnMaximizar";
             btnMaximizar.Size = new Size(23, 23);
             btnMaximizar.TabIndex = 1;
@@ -131,11 +134,12 @@
             btnCerrar.FlatStyle = FlatStyle.Flat;
             btnCerrar.ForeColor = Color.FromArgb(64, 64, 64);
             btnCerrar.Image = Properties.Resources.Boton_Cerrar;
-            btnCerrar.Location = new Point(527, 3);
+            btnCerrar.Location = new Point(540, 3);
             btnCerrar.Name = "btnCerrar";
             btnCerrar.Size = new Size(23, 23);
             btnCerrar.TabIndex = 0;
             btnCerrar.UseVisualStyleBackColor = true;
+            btnCerrar.Click += btnCerrar_Click;
             // 
             // txtBPasswordRegister
             // 

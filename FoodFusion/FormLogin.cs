@@ -25,10 +25,12 @@ namespace FoodFusion
 
         private void btnMaximizar_Click(object sender, EventArgs e)
         {
+
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
+            Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -59,6 +61,19 @@ namespace FoodFusion
         }
 
         private void PbxLogin_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lklRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FormRegister frm = new FormRegister();
+            frm.Owner = this;
+            frm.StartPosition = FormStartPosition.CenterParent;
+            frm.ShowDialog();
+        }
+
+        private void lklSavePassword_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
 
         }
