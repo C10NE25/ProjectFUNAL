@@ -118,67 +118,91 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="PAPA SCREEN" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PAPA SCREEN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="RegisterPage" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\RegisterPage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Boton Cerrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Boton Cerrar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Menú Salchipapas Ilustrado Negro y Amarillo " type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Menú Salchipapas Ilustrado Negro y Amarillo .png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Captura de pantalla 2023-10-31 093821" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Captura de pantalla 2023-10-31 093821.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Boton Expandir" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Boton Expandir.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Estrella_amarilla3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Estrella_amarilla3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Boton Minimizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Boton Minimizar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Salchipapa1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Salchipapa1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Salchipapa3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Salchipapa3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="thankssalchi" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\thankssalchi.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Estrella_amarilla2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Estrella_amarilla2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="frmInicio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\frmInicio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Estrella_amarilla1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Estrella_amarilla1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Salchipapa2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Salchipapa2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MENU" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MENU.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Salchipapa4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Salchipapa4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Salchipapa11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Salchipapa11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="grax" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\grax.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="MENU2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MENU2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Estrella_amarilla" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Estrella_amarilla.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="MENU" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MENU.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MENU3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MENU3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Boton Minimizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Boton Minimizar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tablero-madera-mesa-vacia-frente-fondo-borroso-ai-generativo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tablero-madera-mesa-vacia-frente-fondo-borroso-ai-generativo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Boton Expandir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Boton Expandir.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="thankssalchi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\thankssalchi.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Salchipapa4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Salchipapa4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="grax" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\grax.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Salchipapa2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Salchipapa2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RegisterPage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RegisterPage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Menú Salchipapas Ilustrado Negro y Amarillo " type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Menú Salchipapas Ilustrado Negro y Amarillo .png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondoMENU2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondoMENU2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Salchipapa3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Salchipapa3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Estrella_amarilla2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Estrella_amarilla2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondoMENU" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondoMENU.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Estrella_amarilla3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Estrella_amarilla3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="estrella" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\estrella.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Boton Cerrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Boton Cerrar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Salchipapa11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Salchipapa11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Captura de pantalla 2023-10-31 093821" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Captura de pantalla 2023-10-31 093821.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="frmInicio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\frmInicio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondoMENU3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondoMENU3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Salchipapa1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Salchipapa1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PAPA SCREEN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PAPA SCREEN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FOODFUSION LOGO2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FOODFUSION LOGO2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

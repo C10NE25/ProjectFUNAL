@@ -36,5 +36,30 @@ namespace FoodFusion
         {
 
         }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pctbMenu_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblSalchi4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PanelBarLogin_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
