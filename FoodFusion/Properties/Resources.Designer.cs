@@ -213,6 +213,16 @@ namespace FoodFusion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Icon_Question_Save_Password {
+            get {
+                object obj = ResourceManager.GetObject("Icon_Question_Save_Password", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logo {
             get {
                 object obj = ResourceManager.GetObject("logo", resourceCulture);
@@ -256,6 +266,16 @@ namespace FoodFusion.Properties {
         internal static System.Drawing.Bitmap MENU3 {
             get {
                 object obj = ResourceManager.GetObject("MENU3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Ondas_Fondo_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("Ondas_Fondo-removebg-preview", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
