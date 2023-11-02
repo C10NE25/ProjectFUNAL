@@ -153,6 +153,46 @@ namespace FoodFusion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fondoMENU {
+            get {
+                object obj = ResourceManager.GetObject("fondoMENU", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fondoMENU2 {
+            get {
+                object obj = ResourceManager.GetObject("fondoMENU2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fondoMENU3 {
+            get {
+                object obj = ResourceManager.GetObject("fondoMENU3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FOODFUSION_LOGO2 {
+            get {
+                object obj = ResourceManager.GetObject("FOODFUSION LOGO2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap frmInicio {
             get {
                 object obj = ResourceManager.GetObject("frmInicio", resourceCulture);
@@ -173,6 +213,16 @@ namespace FoodFusion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap logo {
+            get {
+                object obj = ResourceManager.GetObject("logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap MENU {
             get {
                 object obj = ResourceManager.GetObject("MENU", resourceCulture);
@@ -186,6 +236,26 @@ namespace FoodFusion.Properties {
         internal static System.Drawing.Bitmap Menú_Salchipapas_Ilustrado_Negro_y_Amarillo_ {
             get {
                 object obj = ResourceManager.GetObject("Menú Salchipapas Ilustrado Negro y Amarillo ", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MENU2 {
+            get {
+                object obj = ResourceManager.GetObject("MENU2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MENU3 {
+            get {
+                object obj = ResourceManager.GetObject("MENU3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -256,6 +326,16 @@ namespace FoodFusion.Properties {
         internal static System.Drawing.Bitmap Salchipapa4 {
             get {
                 object obj = ResourceManager.GetObject("Salchipapa4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tablero_madera_mesa_vacia_frente_fondo_borroso_ai_generativo {
+            get {
+                object obj = ResourceManager.GetObject("tablero-madera-mesa-vacia-frente-fondo-borroso-ai-generativo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
