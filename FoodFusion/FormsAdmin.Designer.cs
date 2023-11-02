@@ -183,7 +183,7 @@
             btnMinimizarAdmin.FlatStyle = FlatStyle.Flat;
             btnMinimizarAdmin.ForeColor = Color.FromArgb(255, 224, 192);
             btnMinimizarAdmin.Image = Properties.Resources.Boton_Minimizar;
-            btnMinimizarAdmin.Location = new Point(843, 9);
+            btnMinimizarAdmin.Location = new Point(846, 7);
             btnMinimizarAdmin.Name = "btnMinimizarAdmin";
             btnMinimizarAdmin.Size = new Size(29, 27);
             btnMinimizarAdmin.TabIndex = 2;
@@ -194,7 +194,7 @@
             btnExpandirAdmin.FlatStyle = FlatStyle.Flat;
             btnExpandirAdmin.ForeColor = Color.FromArgb(255, 224, 192);
             btnExpandirAdmin.Image = Properties.Resources.Boton_Expandir;
-            btnExpandirAdmin.Location = new Point(878, 9);
+            btnExpandirAdmin.Location = new Point(881, 7);
             btnExpandirAdmin.Name = "btnExpandirAdmin";
             btnExpandirAdmin.Size = new Size(29, 27);
             btnExpandirAdmin.TabIndex = 3;
@@ -205,7 +205,7 @@
             btnCerrarAdmin.FlatStyle = FlatStyle.Flat;
             btnCerrarAdmin.ForeColor = Color.FromArgb(255, 224, 192);
             btnCerrarAdmin.Image = Properties.Resources.Boton_Cerrar;
-            btnCerrarAdmin.Location = new Point(913, 9);
+            btnCerrarAdmin.Location = new Point(916, 7);
             btnCerrarAdmin.Name = "btnCerrarAdmin";
             btnCerrarAdmin.Size = new Size(29, 27);
             btnCerrarAdmin.TabIndex = 4;
