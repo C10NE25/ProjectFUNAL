@@ -173,6 +173,16 @@ namespace FoodFusion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Icon_Question_Save_Password {
+            get {
+                object obj = ResourceManager.GetObject("Icon_Question_Save_Password", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap MENU {
             get {
                 object obj = ResourceManager.GetObject("MENU", resourceCulture);
@@ -186,6 +196,26 @@ namespace FoodFusion.Properties {
         internal static System.Drawing.Bitmap Menú_Salchipapas_Ilustrado_Negro_y_Amarillo_ {
             get {
                 object obj = ResourceManager.GetObject("Menú Salchipapas Ilustrado Negro y Amarillo ", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Ondas_fondo {
+            get {
+                object obj = ResourceManager.GetObject("Ondas fondo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Ondas_Fondo_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("Ondas_Fondo-removebg-preview", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
