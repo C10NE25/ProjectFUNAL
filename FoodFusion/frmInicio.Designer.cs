@@ -90,7 +90,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.Salchipapa11;
-            pictureBox1.Location = new Point(713, 149);
+            pictureBox1.Location = new Point(715, 156);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(197, 123);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
