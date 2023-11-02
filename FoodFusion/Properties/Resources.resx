@@ -160,9 +160,6 @@
   <data name="Salchipapa2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Salchipapa2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Icon_Question_Save_Password" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icon_Question_Save_Password.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="RegisterPage" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\RegisterPage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -181,6 +178,9 @@
   <data name="fondoMENU" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fondoMENU.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Ondas_Fondo-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ondas_Fondo-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Estrella_amarilla3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Estrella_amarilla3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -189,6 +189,9 @@
   </data>
   <data name="Boton Cerrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Boton Cerrar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_Question_Save_Password" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon_Question_Save_Password.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Salchipapa11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Salchipapa11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -208,7 +211,10 @@
   <data name="PAPA SCREEN" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PAPA SCREEN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Ondas_Fondo-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ondas_Fondo-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Icon Table" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon Table.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon Table1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon Table1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

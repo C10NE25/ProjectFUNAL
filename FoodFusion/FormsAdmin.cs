@@ -16,5 +16,21 @@ namespace FoodFusion
         {
             InitializeComponent();
         }
+        int X = 0;
+        int Y = 0;
+
+        private void PanelTBadmin_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button != MouseButtons.Left)
+            {
+                X = e.X;
+                Y = e.Y;
+            }
+            else
+            {
+                Left = Left + (e.X - X);
+                Top = Top + (e.Y - Y);
+            }
+        }
     }
 }

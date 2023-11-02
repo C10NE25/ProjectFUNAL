@@ -47,5 +47,10 @@ namespace FoodFusion
                 Top = Top + (e.Y - Y);
             }
         }
+
+        private void PTopBarRegister_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

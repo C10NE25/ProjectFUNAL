@@ -105,6 +105,7 @@
             PTopBarRegister.Name = "PTopBarRegister";
             PTopBarRegister.Size = new Size(572, 29);
             PTopBarRegister.TabIndex = 5;
+            PTopBarRegister.Paint += PTopBarRegister_Paint;
             PTopBarRegister.MouseMove += PTopBarRegister_MouseMove;
             // 
             // btnMinimizar
