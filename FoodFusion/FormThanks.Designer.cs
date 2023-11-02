@@ -46,9 +46,10 @@
             // 
             pictureBox2.BackColor = Color.NavajoWhite;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(110, 26);
+            pictureBox2.Location = new Point(120, 32);
+            pictureBox2.Margin = new Padding(3, 2, 3, 2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(568, 224);
+            pictureBox2.Size = new Size(460, 168);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
@@ -58,9 +59,10 @@
             // 
             label1.AutoSize = true;
             label1.FlatStyle = FlatStyle.Flat;
-            label1.Location = new Point(288, 299);
+            label1.Font = new Font("Tw Cen MT Condensed Extra Bold", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(229, 214);
             label1.Name = "label1";
-            label1.Size = new Size(212, 20);
+            label1.Size = new Size(234, 22);
             label1.TabIndex = 8;
             label1.Text = "¿Que tal te pareció el servicio?";
             label1.Click += label1_Click_1;
@@ -71,9 +73,10 @@
             button1.BackgroundImageLayout = ImageLayout.Zoom;
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatStyle = FlatStyle.Flat;
-            button1.Location = new Point(49, 333);
+            button1.Location = new Point(43, 250);
+            button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
-            button1.Size = new Size(126, 127);
+            button1.Size = new Size(110, 95);
             button1.TabIndex = 9;
             button1.Text = "1\r\n";
             button1.UseVisualStyleBackColor = true;
@@ -85,9 +88,10 @@
             button2.BackgroundImageLayout = ImageLayout.Zoom;
             button2.FlatAppearance.BorderSize = 0;
             button2.FlatStyle = FlatStyle.Flat;
-            button2.Location = new Point(192, 333);
+            button2.Location = new Point(168, 250);
+            button2.Margin = new Padding(3, 2, 3, 2);
             button2.Name = "button2";
-            button2.Size = new Size(126, 127);
+            button2.Size = new Size(110, 95);
             button2.TabIndex = 10;
             button2.Text = "2";
             button2.UseVisualStyleBackColor = true;
@@ -99,9 +103,10 @@
             button3.BackgroundImageLayout = ImageLayout.Zoom;
             button3.FlatAppearance.BorderSize = 0;
             button3.FlatStyle = FlatStyle.Flat;
-            button3.Location = new Point(335, 333);
+            button3.Location = new Point(293, 250);
+            button3.Margin = new Padding(3, 2, 3, 2);
             button3.Name = "button3";
-            button3.Size = new Size(126, 127);
+            button3.Size = new Size(110, 95);
             button3.TabIndex = 11;
             button3.Text = "3";
             button3.UseVisualStyleBackColor = true;
@@ -112,9 +117,10 @@
             button4.BackgroundImageLayout = ImageLayout.Zoom;
             button4.FlatAppearance.BorderSize = 0;
             button4.FlatStyle = FlatStyle.Flat;
-            button4.Location = new Point(482, 333);
+            button4.Location = new Point(422, 250);
+            button4.Margin = new Padding(3, 2, 3, 2);
             button4.Name = "button4";
-            button4.Size = new Size(126, 127);
+            button4.Size = new Size(110, 95);
             button4.TabIndex = 12;
             button4.Text = "4";
             button4.UseVisualStyleBackColor = true;
@@ -125,9 +131,10 @@
             button5.BackgroundImageLayout = ImageLayout.Zoom;
             button5.FlatAppearance.BorderSize = 0;
             button5.FlatStyle = FlatStyle.Flat;
-            button5.Location = new Point(630, 333);
+            button5.Location = new Point(551, 250);
+            button5.Margin = new Padding(3, 2, 3, 2);
             button5.Name = "button5";
-            button5.Size = new Size(126, 127);
+            button5.Size = new Size(110, 95);
             button5.TabIndex = 13;
             button5.Text = "5";
             button5.UseVisualStyleBackColor = true;
@@ -135,45 +142,42 @@
             // btnMinimizar
             // 
             btnMinimizar.FlatStyle = FlatStyle.Flat;
-            btnMinimizar.ForeColor = Color.FromArgb(64, 64, 64);
+            btnMinimizar.ForeColor = Color.Moccasin;
             btnMinimizar.Image = Properties.Resources.Boton_Minimizar;
-            btnMinimizar.Location = new Point(696, -4);
-            btnMinimizar.Margin = new Padding(3, 4, 3, 4);
+            btnMinimizar.Location = new Point(614, 3);
             btnMinimizar.Name = "btnMinimizar";
-            btnMinimizar.Size = new Size(26, 31);
+            btnMinimizar.Size = new Size(23, 23);
             btnMinimizar.TabIndex = 14;
             btnMinimizar.UseVisualStyleBackColor = true;
             // 
             // btnMaximizar
             // 
             btnMaximizar.FlatStyle = FlatStyle.Flat;
-            btnMaximizar.ForeColor = Color.FromArgb(64, 64, 64);
+            btnMaximizar.ForeColor = Color.Moccasin;
             btnMaximizar.Image = Properties.Resources.Boton_Expandir;
-            btnMaximizar.Location = new Point(730, -4);
-            btnMaximizar.Margin = new Padding(3, 4, 3, 4);
+            btnMaximizar.Location = new Point(644, 3);
             btnMaximizar.Name = "btnMaximizar";
-            btnMaximizar.Size = new Size(26, 31);
+            btnMaximizar.Size = new Size(23, 23);
             btnMaximizar.TabIndex = 15;
             btnMaximizar.UseVisualStyleBackColor = true;
             // 
             // btnCerrar
             // 
             btnCerrar.FlatStyle = FlatStyle.Flat;
-            btnCerrar.ForeColor = Color.FromArgb(64, 64, 64);
+            btnCerrar.ForeColor = Color.Moccasin;
             btnCerrar.Image = Properties.Resources.Boton_Cerrar;
-            btnCerrar.Location = new Point(762, -4);
-            btnCerrar.Margin = new Padding(3, 4, 3, 4);
+            btnCerrar.Location = new Point(672, 3);
             btnCerrar.Name = "btnCerrar";
-            btnCerrar.Size = new Size(26, 31);
+            btnCerrar.Size = new Size(23, 23);
             btnCerrar.TabIndex = 16;
             btnCerrar.UseVisualStyleBackColor = true;
             // 
             // FormThanks
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Moccasin;
-            ClientSize = new Size(801, 470);
+            ClientSize = new Size(701, 352);
             Controls.Add(btnCerrar);
             Controls.Add(btnMaximizar);
             Controls.Add(btnMinimizar);
@@ -185,6 +189,7 @@
             Controls.Add(label1);
             Controls.Add(pictureBox2);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 2, 3, 2);
             Name = "FormThanks";
             Text = "Form1";
             Load += FormThanks_Load;
