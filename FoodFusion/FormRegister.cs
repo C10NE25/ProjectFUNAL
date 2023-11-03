@@ -52,5 +52,10 @@ namespace FoodFusion
         {
 
         }
+
+        private void lblCorreo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
