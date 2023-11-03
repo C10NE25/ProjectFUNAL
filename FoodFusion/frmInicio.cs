@@ -61,5 +61,12 @@ namespace FoodFusion
         {
             Close();
         }
+
+        private void btnComprar_Click(object sender, EventArgs e)
+        {
+            FormThanks form = new FormThanks();
+            this.Visible = false;
+            form.ShowDialog();
+        }
     }
 }
