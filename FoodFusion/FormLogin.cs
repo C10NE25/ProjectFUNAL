@@ -67,8 +67,10 @@ namespace FoodFusion
 
         private void lklRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            //Lleva hacia el nuevo formulario
             FormRegister frm = new FormRegister();
             frm.Owner = this;
+            //Inicia la posición en el centro y bloquea el formulario principal
             frm.StartPosition = FormStartPosition.CenterParent;
             frm.ShowDialog();
         }
