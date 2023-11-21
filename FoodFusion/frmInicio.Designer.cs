@@ -90,7 +90,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.Salchipapa11;
-            pictureBox1.Location = new Point(626, 117);
+            pictureBox1.Location = new Point(626, 111);
             pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(172, 92);
@@ -102,7 +102,7 @@
             // 
             checkBox1.AutoSize = true;
             checkBox1.FlatStyle = FlatStyle.Flat;
-            checkBox1.Location = new Point(836, 166);
+            checkBox1.Location = new Point(836, 155);
             checkBox1.Margin = new Padding(3, 2, 3, 2);
             checkBox1.Name = "checkBox1";
             checkBox1.Size = new Size(12, 11);
@@ -125,7 +125,7 @@
             // pictureBox2
             // 
             pictureBox2.Image = Properties.Resources.Salchipapa2;
-            pictureBox2.Location = new Point(624, 222);
+            pictureBox2.Location = new Point(626, 217);
             pictureBox2.Margin = new Padding(3, 2, 3, 2);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(172, 92);
@@ -149,7 +149,7 @@
             // 
             checkBox2.AutoSize = true;
             checkBox2.FlatStyle = FlatStyle.Flat;
-            checkBox2.Location = new Point(836, 271);
+            checkBox2.Location = new Point(836, 261);
             checkBox2.Margin = new Padding(3, 2, 3, 2);
             checkBox2.Name = "checkBox2";
             checkBox2.Size = new Size(12, 11);
@@ -183,7 +183,7 @@
             // pictureBox3
             // 
             pictureBox3.Image = Properties.Resources.Salchipapa3;
-            pictureBox3.Location = new Point(624, 332);
+            pictureBox3.Location = new Point(625, 323);
             pictureBox3.Margin = new Padding(3, 2, 3, 2);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(172, 92);
@@ -195,7 +195,7 @@
             // 
             checkBox3.AutoSize = true;
             checkBox3.FlatStyle = FlatStyle.Flat;
-            checkBox3.Location = new Point(836, 371);
+            checkBox3.Location = new Point(836, 363);
             checkBox3.Margin = new Padding(3, 2, 3, 2);
             checkBox3.Name = "checkBox3";
             checkBox3.Size = new Size(12, 11);
@@ -218,7 +218,7 @@
             // pictureBox4
             // 
             pictureBox4.Image = Properties.Resources.Salchipapa4;
-            pictureBox4.Location = new Point(624, 441);
+            pictureBox4.Location = new Point(624, 433);
             pictureBox4.Margin = new Padding(3, 2, 3, 2);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(172, 92);
@@ -231,7 +231,7 @@
             checkBox4.AutoSize = true;
             checkBox4.BackColor = SystemColors.ButtonFace;
             checkBox4.FlatStyle = FlatStyle.Flat;
-            checkBox4.Location = new Point(836, 472);
+            checkBox4.Location = new Point(836, 473);
             checkBox4.Margin = new Padding(3, 2, 3, 2);
             checkBox4.Name = "checkBox4";
             checkBox4.Size = new Size(12, 11);
@@ -304,10 +304,10 @@
             btnComprar.BackColor = SystemColors.ButtonHighlight;
             btnComprar.Font = new Font("Ravie", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             btnComprar.ForeColor = Color.Black;
-            btnComprar.Location = new Point(746, 547);
+            btnComprar.Location = new Point(746, 537);
             btnComprar.Margin = new Padding(3, 2, 3, 2);
             btnComprar.Name = "btnComprar";
-            btnComprar.Size = new Size(116, 22);
+            btnComprar.Size = new Size(116, 32);
             btnComprar.TabIndex = 22;
             btnComprar.Text = "Comprar";
             btnComprar.UseVisualStyleBackColor = false;
@@ -319,7 +319,7 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("MV Boli", 28.2F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.ButtonHighlight;
-            label1.Location = new Point(358, 56);
+            label1.Location = new Point(338, 32);
             label1.Name = "label1";
             label1.Size = new Size(141, 50);
             label1.TabIndex = 23;
