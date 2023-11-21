@@ -30,7 +30,7 @@ namespace FoodFusion
         private void btnRegister_Click(object sender, EventArgs e)
         {
             TextWriter RegisterUser = new StreamWriter(@"D:\ProjectFUNAL\C10NE25\ProjectFUNAL\FoodFusion\bin\Debug" + txtBName.Text + "txt", true);
-            RegisterUser.WriteLine(txtBPasswordRegister.Text, txtBEmail.Text, txtBUser.Text, txtBName.Text);
+            RegisterUser.WriteLine(txtBPasswordRegister.Text, txtBEmail.Text, txtBName.Text);
             RegisterUser.Close();
             MessageBox.Show("");
 

@@ -32,5 +32,10 @@ namespace FoodFusion
                 Top = Top + (e.Y - Y);
             }
         }
+
+        private void btnCerrarAdmin_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

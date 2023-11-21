@@ -35,10 +35,27 @@ namespace FoodFusion
 
         private void button1_Click(object sender, EventArgs e)
         {
-            frmInicio frm = new frmInicio();
-            this.Visible = false;
-            frm.ShowDialog();
+            //Asignamos las variable un valor.
+            string nombre = txtBUser.Text;
+            string password = txtBPassword.Text;
 
+            if (nombre == "admin" && password == "/A@495067") 
+            {
+                FormsAdmin frm = new FormsAdmin();
+                this.Visible = false;
+                frm.ShowDialog();
+            }
+            else if(nombre == "" && password == "")
+            {
+                frmInicio frm2 = new frmInicio();
+                this.Visible = false;
+                frm2.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Error: Revise los datos nuevamente");
+            }
+            //Hacer una funcion que valide los datos dentro del datagriedview
         }
 
         private void lblPassword_Click(object sender, EventArgs e)
