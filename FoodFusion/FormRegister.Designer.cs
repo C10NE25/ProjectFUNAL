@@ -41,7 +41,7 @@
             txtBEmail = new TextBox();
             lblName = new Label();
             lblUserR = new Label();
-            lblCorreo = new Label();
+            lblEmail = new Label();
             lblPasswordR = new Label();
             ((System.ComponentModel.ISupportInitialize)PBoxRegister).BeginInit();
             PTopBarRegister.SuspendLayout();
@@ -188,16 +188,16 @@
             lblUserR.TabIndex = 9;
             lblUserR.Text = "User";
             // 
-            // lblCorreo
+            // lblEmail
             // 
-            lblCorreo.AutoSize = true;
-            lblCorreo.ForeColor = Color.White;
-            lblCorreo.Location = new Point(367, 288);
-            lblCorreo.Name = "lblCorreo";
-            lblCorreo.Size = new Size(54, 20);
-            lblCorreo.TabIndex = 10;
-            lblCorreo.Text = "Correo";
-            lblCorreo.Click += lblCorreo_Click;
+            lblEmail.AutoSize = true;
+            lblEmail.ForeColor = Color.White;
+            lblEmail.Location = new Point(367, 288);
+            lblEmail.Name = "lblEmail";
+            lblEmail.Size = new Size(46, 20);
+            lblEmail.TabIndex = 10;
+            lblEmail.Text = "Email";
+            lblEmail.Click += lblCorreo_Click;
             // 
             // lblPasswordR
             // 
@@ -216,7 +216,7 @@
             BackColor = Color.FromArgb(64, 64, 64);
             ClientSize = new Size(654, 625);
             Controls.Add(lblPasswordR);
-            Controls.Add(lblCorreo);
+            Controls.Add(lblEmail);
             Controls.Add(lblUserR);
             Controls.Add(lblName);
             Controls.Add(txtBEmail);
@@ -252,7 +252,7 @@
         private TextBox txtBEmail;
         private Label lblName;
         private Label lblUserR;
-        private Label lblCorreo;
+        private Label lblEmail;
         private Label lblPasswordR;
     }
 }
