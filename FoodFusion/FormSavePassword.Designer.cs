@@ -81,6 +81,7 @@
             btnExpandirSP.Size = new Size(23, 23);
             btnExpandirSP.TabIndex = 1;
             btnExpandirSP.UseVisualStyleBackColor = true;
+            btnExpandirSP.Click += btnExpandirSP_Click;
             // 
             // btnMinimizarSP
             // 
@@ -92,6 +93,7 @@
             btnMinimizarSP.Size = new Size(23, 23);
             btnMinimizarSP.TabIndex = 0;
             btnMinimizarSP.UseVisualStyleBackColor = true;
+            btnMinimizarSP.Click += btnMinimizarSP_Click;
             // 
             // lblSaveP
             // 

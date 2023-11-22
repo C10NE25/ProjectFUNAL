@@ -4,13 +4,14 @@ namespace FoodFusion
 {
     public partial class FormLogin : Form
     {
+        int X = 0;
+        int Y = 0;
+
         public FormLogin()
         {
             InitializeComponent();
         }
 
-        int X = 0;
-        int Y = 0;
         private void PaneTopBar_Paint(object sender, PaintEventArgs e)
         {
 
@@ -67,6 +68,7 @@ namespace FoodFusion
                 MessageBox.Show("Error: Revise los datos nuevamente");
             }
             //Hacer una funcion que valide los datos dentro del datagriedview
+
         }
 
         private void lblPassword_Click(object sender, EventArgs e)

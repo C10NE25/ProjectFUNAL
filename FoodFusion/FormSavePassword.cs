@@ -21,5 +21,15 @@ namespace FoodFusion
         {
             Close();
         }
+
+        private void btnExpandirSP_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Lo lamentamos esta pestaña no se puede maximizar");
+        }
+
+        private void btnMinimizarSP_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
     }
 }
