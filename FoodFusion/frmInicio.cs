@@ -59,7 +59,7 @@ namespace FoodFusion
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
-            Close();
+            Application.Exit();
         }
 
         private void btnComprar_Click(object sender, EventArgs e)

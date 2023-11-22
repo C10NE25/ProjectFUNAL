@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogin));
             PbxLogin = new PictureBox();
             PanelBarLogin = new Panel();
             btnCerrar = new Button();
@@ -217,6 +218,7 @@
             Controls.Add(PbxLogin);
             Controls.Add(PanelBarLogin);
             FormBorderStyle = FormBorderStyle.None;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "FormLogin";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FormLogin";
