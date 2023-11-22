@@ -36,6 +36,8 @@
             dataGridView1 = new DataGridView();
             Producto = new DataGridViewTextBoxColumn();
             Precio = new DataGridViewTextBoxColumn();
+            label1 = new Label();
+            lblPrecioTotal = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -119,17 +121,40 @@
             // 
             // Producto
             // 
+            Producto.Frozen = true;
             Producto.HeaderText = "Producto";
             Producto.MinimumWidth = 6;
             Producto.Name = "Producto";
+            Producto.ReadOnly = true;
+            Producto.Resizable = DataGridViewTriState.False;
             Producto.Width = 300;
             // 
             // Precio
             // 
+            Precio.Frozen = true;
             Precio.HeaderText = "Precio";
             Precio.MinimumWidth = 6;
             Precio.Name = "Precio";
+            Precio.ReadOnly = true;
+            Precio.Resizable = DataGridViewTriState.False;
             Precio.Width = 125;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(38, 535);
+            label1.Name = "label1";
+            label1.Size = new Size(87, 20);
+            label1.TabIndex = 36;
+            label1.Text = "Precio Total";
+            // 
+            // lblPrecioTotal
+            // 
+            lblPrecioTotal.AutoSize = true;
+            lblPrecioTotal.Location = new Point(151, 535);
+            lblPrecioTotal.Name = "lblPrecioTotal";
+            lblPrecioTotal.Size = new Size(0, 20);
+            lblPrecioTotal.TabIndex = 37;
             // 
             // FormCarrito
             // 
@@ -137,6 +162,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.fondoMENU3;
             ClientSize = new Size(673, 591);
+            Controls.Add(lblPrecioTotal);
+            Controls.Add(label1);
             Controls.Add(dataGridView1);
             Controls.Add(btnComprar);
             Controls.Add(lblMenuC);
@@ -163,5 +190,7 @@
         private DataGridView dataGridView1;
         private DataGridViewTextBoxColumn Producto;
         private DataGridViewTextBoxColumn Precio;
+        private Label label1;
+        private Label lblPrecioTotal;
     }
 }

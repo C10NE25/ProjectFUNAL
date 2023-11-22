@@ -155,9 +155,8 @@
             cbxSalchi2.FlatStyle = FlatStyle.Flat;
             cbxSalchi2.Location = new Point(955, 348);
             cbxSalchi2.Name = "cbxSalchi2";
-            cbxSalchi2.Size = new Size(211, 24);
+            cbxSalchi2.Size = new Size(14, 13);
             cbxSalchi2.TabIndex = 9;
-            cbxSalchi2.Text = "Salchi Hotdog -  A lo pobre";
             cbxSalchi2.UseVisualStyleBackColor = true;
             // 
             // lblSalchi3
@@ -233,9 +232,8 @@
             cbxSalchi4.FlatStyle = FlatStyle.Flat;
             cbxSalchi4.Location = new Point(955, 631);
             cbxSalchi4.Name = "cbxSalchi4";
-            cbxSalchi4.Size = new Size(127, 24);
+            cbxSalchi4.Size = new Size(14, 13);
             cbxSalchi4.TabIndex = 16;
-            cbxSalchi4.Text = "Promo Familiar";
             cbxSalchi4.UseVisualStyleBackColor = false;
             // 
             // label8
@@ -368,7 +366,7 @@
             // 
             cbxBebida4.AutoSize = true;
             cbxBebida4.FlatStyle = FlatStyle.Flat;
-            cbxBebida4.Location = new Point(955, 990);
+            cbxBebida4.Location = new Point(955, 940);
             cbxBebida4.Name = "cbxBebida4";
             cbxBebida4.Size = new Size(14, 13);
             cbxBebida4.TabIndex = 41;
@@ -378,7 +376,7 @@
             // 
             cbxBebida3.AutoSize = true;
             cbxBebida3.FlatStyle = FlatStyle.Flat;
-            cbxBebida3.Location = new Point(955, 931);
+            cbxBebida3.Location = new Point(955, 881);
             cbxBebida3.Name = "cbxBebida3";
             cbxBebida3.Size = new Size(14, 13);
             cbxBebida3.TabIndex = 40;
@@ -388,7 +386,7 @@
             // 
             cbxBebida2.AutoSize = true;
             cbxBebida2.FlatStyle = FlatStyle.Flat;
-            cbxBebida2.Location = new Point(955, 866);
+            cbxBebida2.Location = new Point(955, 816);
             cbxBebida2.Name = "cbxBebida2";
             cbxBebida2.Size = new Size(14, 13);
             cbxBebida2.TabIndex = 39;
@@ -398,7 +396,7 @@
             // 
             cbxBebida1.AutoSize = true;
             cbxBebida1.FlatStyle = FlatStyle.Flat;
-            cbxBebida1.Location = new Point(955, 806);
+            cbxBebida1.Location = new Point(955, 756);
             cbxBebida1.Name = "cbxBebida1";
             cbxBebida1.Size = new Size(14, 13);
             cbxBebida1.TabIndex = 38;
@@ -410,7 +408,7 @@
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Segoe UI Black", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             label2.ForeColor = SystemColors.ButtonHighlight;
-            label2.Location = new Point(47, 986);
+            label2.Location = new Point(47, 940);
             label2.Name = "label2";
             label2.Size = new Size(340, 40);
             label2.TabIndex = 37;
@@ -422,7 +420,7 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI Black", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.ButtonHighlight;
-            label1.Location = new Point(47, 927);
+            label1.Location = new Point(47, 881);
             label1.Name = "label1";
             label1.Size = new Size(328, 40);
             label1.TabIndex = 36;
@@ -434,7 +432,7 @@
             lblGaseosa3.BackColor = Color.Transparent;
             lblGaseosa3.Font = new Font("Segoe UI Black", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             lblGaseosa3.ForeColor = SystemColors.ButtonHighlight;
-            lblGaseosa3.Location = new Point(47, 862);
+            lblGaseosa3.Location = new Point(47, 816);
             lblGaseosa3.Name = "lblGaseosa3";
             lblGaseosa3.Size = new Size(219, 40);
             lblGaseosa3.TabIndex = 35;
@@ -446,7 +444,7 @@
             lblGaseosa1.BackColor = Color.Transparent;
             lblGaseosa1.Font = new Font("Segoe UI Black", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             lblGaseosa1.ForeColor = SystemColors.ButtonHighlight;
-            lblGaseosa1.Location = new Point(47, 802);
+            lblGaseosa1.Location = new Point(47, 756);
             lblGaseosa1.Name = "lblGaseosa1";
             lblGaseosa1.Size = new Size(217, 40);
             lblGaseosa1.TabIndex = 34;
@@ -458,7 +456,7 @@
             lblBebidas.BackColor = Color.Transparent;
             lblBebidas.Font = new Font("MV Boli", 28.2F, FontStyle.Bold, GraphicsUnit.Point);
             lblBebidas.ForeColor = SystemColors.ButtonHighlight;
-            lblBebidas.Location = new Point(386, 716);
+            lblBebidas.Location = new Point(386, 685);
             lblBebidas.Name = "lblBebidas";
             lblBebidas.Size = new Size(226, 62);
             lblBebidas.TabIndex = 33;
@@ -469,7 +467,7 @@
             btnComprar.BackColor = SystemColors.ButtonHighlight;
             btnComprar.Font = new Font("Ravie", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             btnComprar.ForeColor = Color.Black;
-            btnComprar.Location = new Point(650, 977);
+            btnComprar.Location = new Point(742, 975);
             btnComprar.Name = "btnComprar";
             btnComprar.Size = new Size(227, 37);
             btnComprar.TabIndex = 42;

@@ -26,6 +26,9 @@ namespace FoodFusion
             {
                 dataGridView1.Rows.Add(producto.Nombre, producto.Precio);
             }
+
+            decimal sumaPrecios = productosSeleccionados.Sum(producto => producto.Precio);
+            lblPrecioTotal.Text = $"Total: ${sumaPrecios}";
         }
 
 
