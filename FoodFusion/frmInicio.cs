@@ -16,45 +16,16 @@ namespace FoodFusion
         {
             InitializeComponent();
         }
-
-        private void frmInicio_Load(object sender, EventArgs e)
+        private List<Producto> productosSeleccionados = new List<Producto>();
+        public class Producto
         {
+            public string Nombre { get; set; }
+            public decimal Precio { get; set; }
 
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblSalchi1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pctbMenu_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblSalchi4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void PanelBarLogin_Paint(object sender, PaintEventArgs e)
-        {
-
+            public override string ToString()
+            {
+                return $"{Nombre} - ${Precio}";
+            }
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -64,14 +35,85 @@ namespace FoodFusion
 
         private void btnComprar_Click(object sender, EventArgs e)
         {
-            FormBebidas form = new FormBebidas();
+
+        }
+
+        private string ObtenerNombreProducto(string nombreCheckBox)
+        {
+            switch (nombreCheckBox)
+            {
+                case "cbxSalchi1":
+                    return "Salchi Hotdog - La económica";
+                case "cbxSalchi2":
+                case "cbxSalchi3":
+                    return "Salchi Hotdog - A lo pobre";
+                case "cbxSalchi4":
+                    return "Salchi Hotdog - La revuelta";
+                case "cbxBebida1":
+                case "cbxBebida2":
+                    return "Inka Cola 1L";
+                case "cbxBebida3":
+                    return "Jarra de Chicha morada 1L";
+                case "cbxBebida4":
+                    return "Jarra de Limonada Frozen 1L";
+                default:
+                    return "";
+            }
+        }
+
+        private decimal ObtenerPrecioPorProducto(string nombreCheckBox)
+        {
+            switch (nombreCheckBox)
+            {
+                case "cbxSalchi1":
+                    return 12.50m;
+                case "cbxSalchi2":
+                case "cbxSalchi3":
+                case "cbxSalchi4":
+                    return 17.90m;
+                case "cbxBebida1":
+                case "cbxBebida2":
+                    return 7m;
+                case "cbxBebida3":
+                    return 10m;
+                case "cbxBebida4":
+                    return 12m;
+                default:
+                    return 0m;
+            }
+        }
+
+
+
+        private void btnComprar_Click_1(object sender, EventArgs e)
+        {
+            foreach (Control control in Controls)
+            {
+                if (control is CheckBox checkBox && checkBox.Checked)
+                {
+                    // Configura la propiedad Tag al crear el CheckBox
+                    checkBox.Tag = new Producto
+                    {
+                        Nombre = ObtenerNombreProducto(checkBox.Name),
+                        Precio = ObtenerPrecioPorProducto(checkBox.Name)
+                    };
+
+                    // Recupera la información del Tag asociado al CheckBox
+                    Producto producto = (Producto)checkBox.Tag;
+
+                    productosSeleccionados.Add(producto);
+                }
+            }
+
+
+
+
+            FormCarrito form = new FormCarrito(productosSeleccionados);
             this.Visible = false;
             form.ShowDialog();
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-
         }
-    }
+    
+
 }

@@ -18,7 +18,7 @@ namespace FoodFusion
             InitializeComponent();
         }
 
-        private string database = @"D:\ProjectFUNAL\C10NE25\ProjectFUNAL\FoodFusion\bin\Debug";
+        private string database = @"C:\Users\ASUS\source\repos\C10NE25\basededatos";
 
         int X = 0;
         int Y = 0;
@@ -29,7 +29,7 @@ namespace FoodFusion
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            TextWriter RegisterUser = new StreamWriter(@"D:\ProjectFUNAL\C10NE25\ProjectFUNAL\FoodFusion\bin\Debug" + txtBName.Text + "txt", true);
+            TextWriter RegisterUser = new StreamWriter(@"C:\Users\ASUS\source\repos\C10NE25\basededatos" + txtBName.Text + "txt", true);
             RegisterUser.WriteLine(txtBPasswordRegister.Text, txtBEmail.Text, txtBName.Text);
             RegisterUser.Close();
             MessageBox.Show("Recuerde los siguientes codigos: ABXDY");//aqui tiene que ir aleatorio

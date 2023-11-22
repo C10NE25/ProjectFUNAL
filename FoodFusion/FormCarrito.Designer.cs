@@ -33,6 +33,10 @@
             btnMinimizar = new Button();
             lblMenuC = new Label();
             btnComprar = new Button();
+            dataGridView1 = new DataGridView();
+            Producto = new DataGridViewTextBoxColumn();
+            Precio = new DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // btnCerrar
@@ -41,7 +45,7 @@
             btnCerrar.FlatStyle = FlatStyle.Flat;
             btnCerrar.ForeColor = Color.FromArgb(64, 64, 64);
             btnCerrar.Image = Properties.Resources.Boton_Cerrar;
-            btnCerrar.Location = new Point(675, 13);
+            btnCerrar.Location = new Point(641, 13);
             btnCerrar.Margin = new Padding(3, 4, 3, 4);
             btnCerrar.Name = "btnCerrar";
             btnCerrar.Size = new Size(26, 31);
@@ -54,7 +58,7 @@
             btnMaximizar.FlatStyle = FlatStyle.Flat;
             btnMaximizar.ForeColor = Color.FromArgb(64, 64, 64);
             btnMaximizar.Image = Properties.Resources.Boton_Expandir;
-            btnMaximizar.Location = new Point(643, 13);
+            btnMaximizar.Location = new Point(609, 13);
             btnMaximizar.Margin = new Padding(3, 4, 3, 4);
             btnMaximizar.Name = "btnMaximizar";
             btnMaximizar.Size = new Size(26, 31);
@@ -67,7 +71,7 @@
             btnMinimizar.FlatStyle = FlatStyle.Flat;
             btnMinimizar.ForeColor = Color.FromArgb(64, 64, 64);
             btnMinimizar.Image = Properties.Resources.Boton_Minimizar;
-            btnMinimizar.Location = new Point(611, 13);
+            btnMinimizar.Location = new Point(577, 13);
             btnMinimizar.Margin = new Padding(3, 4, 3, 4);
             btnMinimizar.Name = "btnMinimizar";
             btnMinimizar.Size = new Size(26, 31);
@@ -80,7 +84,7 @@
             lblMenuC.BackColor = Color.Transparent;
             lblMenuC.Font = new Font("MV Boli", 28.2F, FontStyle.Bold, GraphicsUnit.Point);
             lblMenuC.ForeColor = SystemColors.ButtonHighlight;
-            lblMenuC.Location = new Point(52, 60);
+            lblMenuC.Location = new Point(38, 48);
             lblMenuC.Name = "lblMenuC";
             lblMenuC.Size = new Size(597, 62);
             lblMenuC.TabIndex = 24;
@@ -91,7 +95,7 @@
             btnComprar.BackColor = SystemColors.ButtonHighlight;
             btnComprar.Font = new Font("Ravie", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             btnComprar.ForeColor = Color.Black;
-            btnComprar.Location = new Point(541, 532);
+            btnComprar.Location = new Point(500, 526);
             btnComprar.Name = "btnComprar";
             btnComprar.Size = new Size(160, 37);
             btnComprar.TabIndex = 34;
@@ -99,12 +103,41 @@
             btnComprar.UseVisualStyleBackColor = false;
             btnComprar.Click += btnComprar_Click;
             // 
+            // dataGridView1
+            // 
+            dataGridView1.BorderStyle = BorderStyle.Fixed3D;
+            dataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.SingleVertical;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Producto, Precio });
+            dataGridView1.Location = new Point(135, 150);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersVisible = false;
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.RowTemplate.Height = 29;
+            dataGridView1.Size = new Size(428, 329);
+            dataGridView1.TabIndex = 35;
+            // 
+            // Producto
+            // 
+            Producto.HeaderText = "Producto";
+            Producto.MinimumWidth = 6;
+            Producto.Name = "Producto";
+            Producto.Width = 300;
+            // 
+            // Precio
+            // 
+            Precio.HeaderText = "Precio";
+            Precio.MinimumWidth = 6;
+            Precio.Name = "Precio";
+            Precio.Width = 125;
+            // 
             // FormCarrito
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.fondoMENU3;
-            ClientSize = new Size(713, 591);
+            ClientSize = new Size(673, 591);
+            Controls.Add(dataGridView1);
             Controls.Add(btnComprar);
             Controls.Add(lblMenuC);
             Controls.Add(btnMinimizar);
@@ -114,6 +147,8 @@
             Name = "FormCarrito";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FormCarrito";
+            Load += FormCarrito_Load;
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -125,5 +160,8 @@
         private Button btnMinimizar;
         private Label lblMenuC;
         private Button btnComprar;
+        private DataGridView dataGridView1;
+        private DataGridViewTextBoxColumn Producto;
+        private DataGridViewTextBoxColumn Precio;
     }
 }
