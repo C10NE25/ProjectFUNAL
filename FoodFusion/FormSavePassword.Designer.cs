@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormSavePassword));
             PanelSaveP = new Panel();
             btnCerrarSP = new Button();
             btnExpandirSP = new Button();
@@ -190,6 +191,7 @@
             Controls.Add(lblSaveP);
             Controls.Add(PanelSaveP);
             FormBorderStyle = FormBorderStyle.None;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "FormSavePassword";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FormSavePassword";

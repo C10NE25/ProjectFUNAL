@@ -42,20 +42,20 @@ namespace FoodFusion
             string nombre = txtBUser.Text;
             string password = txtBPassword.Text;
 
-            if (nombre == "admin" && password == "/A@495067") 
+            if (nombre == "admin" && password == "/A@495067")
             {
                 frmControllerUser frm1 = new frmControllerUser();
                 this.Visible = false;
                 frm1.StartPosition = FormStartPosition.CenterParent;
                 frm1.ShowDialog();
             }
-            else if(nombre == "kitchen" && password == "/@R2014")
+            else if (nombre == "kitchen" && password == "/@R2014")
             {
                 FormsAdmin frm2 = new FormsAdmin();
                 this.Visible = false;
                 frm2.ShowDialog();
             }
-            else if(nombre == "" && password == "")
+            else if (nombre == "" && password == "")
             {
                 frmInicio frm3 = new frmInicio();
                 this.Visible = false;

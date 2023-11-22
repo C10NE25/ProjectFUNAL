@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormsAdmin));
             PanelTBadmin = new Panel();
             btnCerrarAdmin = new Button();
             btnExpandirAdmin = new Button();
@@ -126,6 +127,7 @@
             Controls.Add(dataGridView1);
             Controls.Add(PanelTBadmin);
             FormBorderStyle = FormBorderStyle.None;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "FormsAdmin";
             Text = "FormsTables";
             PanelTBadmin.ResumeLayout(false);

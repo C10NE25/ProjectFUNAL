@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInicio));
             lblSalchi1 = new Label();
             lblPrecio1 = new Label();
             pictureBox1 = new PictureBox();
@@ -411,6 +412,7 @@
             Controls.Add(lblPrecio1);
             Controls.Add(lblSalchi1);
             FormBorderStyle = FormBorderStyle.None;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(3, 2, 3, 2);
             Name = "frmInicio";
             StartPosition = FormStartPosition.CenterScreen;
