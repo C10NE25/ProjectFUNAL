@@ -29,9 +29,14 @@ namespace FoodFusion
 
         private void btnComprar_Click(object sender, EventArgs e)
         {
-            FormThanks form = new FormThanks();
+            FormCarrito form = new FormCarrito();
             this.Visible = false;
             form.ShowDialog();
+        }
+
+        private void FormBebidas_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

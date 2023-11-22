@@ -107,6 +107,7 @@
             checkBox1.Size = new Size(14, 13);
             checkBox1.TabIndex = 5;
             checkBox1.UseVisualStyleBackColor = true;
+            checkBox1.CheckedChanged += checkBox1_CheckedChanged;
             // 
             // lblSalchi2
             // 

@@ -46,7 +46,7 @@
             lblBebidas.BackColor = Color.Transparent;
             lblBebidas.Font = new Font("MV Boli", 28.2F, FontStyle.Bold, GraphicsUnit.Point);
             lblBebidas.ForeColor = SystemColors.ButtonHighlight;
-            lblBebidas.Location = new Point(157, 27);
+            lblBebidas.Location = new Point(151, 59);
             lblBebidas.Name = "lblBebidas";
             lblBebidas.Size = new Size(226, 62);
             lblBebidas.TabIndex = 24;
@@ -59,7 +59,7 @@
             lblGaseosa1.BackColor = Color.Transparent;
             lblGaseosa1.Font = new Font("Segoe UI Black", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             lblGaseosa1.ForeColor = SystemColors.ButtonHighlight;
-            lblGaseosa1.Location = new Point(12, 138);
+            lblGaseosa1.Location = new Point(12, 160);
             lblGaseosa1.Name = "lblGaseosa1";
             lblGaseosa1.Size = new Size(217, 40);
             lblGaseosa1.TabIndex = 25;
@@ -71,7 +71,7 @@
             lblGaseosa3.BackColor = Color.Transparent;
             lblGaseosa3.Font = new Font("Segoe UI Black", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             lblGaseosa3.ForeColor = SystemColors.ButtonHighlight;
-            lblGaseosa3.Location = new Point(10, 196);
+            lblGaseosa3.Location = new Point(10, 221);
             lblGaseosa3.Name = "lblGaseosa3";
             lblGaseosa3.Size = new Size(219, 40);
             lblGaseosa3.TabIndex = 26;
@@ -83,7 +83,7 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI Black", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.ButtonHighlight;
-            label1.Location = new Point(10, 259);
+            label1.Location = new Point(10, 280);
             label1.Name = "label1";
             label1.Size = new Size(328, 40);
             label1.TabIndex = 27;
@@ -96,7 +96,7 @@
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Segoe UI Black", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             label2.ForeColor = SystemColors.ButtonHighlight;
-            label2.Location = new Point(10, 327);
+            label2.Location = new Point(12, 341);
             label2.Name = "label2";
             label2.Size = new Size(340, 40);
             label2.TabIndex = 28;
@@ -106,7 +106,7 @@
             // 
             checkBox1.AutoSize = true;
             checkBox1.FlatStyle = FlatStyle.Flat;
-            checkBox1.Location = new Point(446, 138);
+            checkBox1.Location = new Point(446, 160);
             checkBox1.Name = "checkBox1";
             checkBox1.Size = new Size(14, 13);
             checkBox1.TabIndex = 29;
@@ -116,7 +116,7 @@
             // 
             checkBox2.AutoSize = true;
             checkBox2.FlatStyle = FlatStyle.Flat;
-            checkBox2.Location = new Point(446, 196);
+            checkBox2.Location = new Point(446, 221);
             checkBox2.Name = "checkBox2";
             checkBox2.Size = new Size(14, 13);
             checkBox2.TabIndex = 30;
@@ -126,7 +126,7 @@
             // 
             checkBox3.AutoSize = true;
             checkBox3.FlatStyle = FlatStyle.Flat;
-            checkBox3.Location = new Point(446, 259);
+            checkBox3.Location = new Point(446, 280);
             checkBox3.Name = "checkBox3";
             checkBox3.Size = new Size(14, 13);
             checkBox3.TabIndex = 31;
@@ -136,7 +136,7 @@
             // 
             checkBox4.AutoSize = true;
             checkBox4.FlatStyle = FlatStyle.Flat;
-            checkBox4.Location = new Point(446, 327);
+            checkBox4.Location = new Point(446, 341);
             checkBox4.Name = "checkBox4";
             checkBox4.Size = new Size(14, 13);
             checkBox4.TabIndex = 32;
@@ -147,11 +147,11 @@
             btnComprar.BackColor = SystemColors.ButtonHighlight;
             btnComprar.Font = new Font("Ravie", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             btnComprar.ForeColor = Color.Black;
-            btnComprar.Location = new Point(375, 360);
+            btnComprar.Location = new Point(271, 396);
             btnComprar.Name = "btnComprar";
-            btnComprar.Size = new Size(123, 37);
+            btnComprar.Size = new Size(227, 37);
             btnComprar.TabIndex = 33;
-            btnComprar.Text = "Comprar";
+            btnComprar.Text = "Comprobar pago\r\n";
             btnComprar.UseVisualStyleBackColor = false;
             btnComprar.Click += btnComprar_Click;
             // 
@@ -160,7 +160,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.fondoMENU3;
-            ClientSize = new Size(510, 409);
+            ClientSize = new Size(510, 445);
             Controls.Add(btnComprar);
             Controls.Add(checkBox4);
             Controls.Add(checkBox3);
@@ -171,9 +171,11 @@
             Controls.Add(lblGaseosa3);
             Controls.Add(lblGaseosa1);
             Controls.Add(lblBebidas);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "FormBebidas";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FormBebidas";
+            Load += FormBebidas_Load;
             ResumeLayout(false);
             PerformLayout();
         }

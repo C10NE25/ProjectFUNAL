@@ -68,5 +68,10 @@ namespace FoodFusion
             this.Visible = false;
             form.ShowDialog();
         }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
