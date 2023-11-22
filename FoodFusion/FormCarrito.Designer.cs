@@ -53,6 +53,7 @@
             btnCerrar.Size = new Size(26, 31);
             btnCerrar.TabIndex = 1;
             btnCerrar.UseVisualStyleBackColor = false;
+            btnCerrar.Click += btnCerrar_Click;
             // 
             // btnMaximizar
             // 
