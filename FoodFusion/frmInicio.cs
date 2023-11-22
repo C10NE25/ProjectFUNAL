@@ -64,7 +64,7 @@ namespace FoodFusion
 
         private void btnComprar_Click(object sender, EventArgs e)
         {
-            FormThanks form = new FormThanks();
+            FormBebidas form = new FormBebidas();
             this.Visible = false;
             form.ShowDialog();
         }

@@ -106,6 +106,7 @@
             button3.TabIndex = 11;
             button3.Text = "3";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // button4
             // 
@@ -119,6 +120,7 @@
             button4.TabIndex = 12;
             button4.Text = "4";
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // button5
             // 
@@ -132,6 +134,7 @@
             button5.TabIndex = 13;
             button5.Text = "5";
             button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
             // 
             // btnMinimizar
             // 
