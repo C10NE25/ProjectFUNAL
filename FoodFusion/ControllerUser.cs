@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace FoodFusion
 {
-    public partial class ControllerUser : Form
+    public partial class frmControllerUser : Form
     {
-        public ControllerUser()
+        public frmControllerUser()
         {
             InitializeComponent();
         }

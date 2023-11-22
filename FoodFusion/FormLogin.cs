@@ -1,3 +1,5 @@
+using System.Windows.Forms;
+
 namespace FoodFusion
 {
     public partial class FormLogin : Form
@@ -21,16 +23,17 @@ namespace FoodFusion
 
         private void btnMinimizar_Click(object sender, EventArgs e)
         {
+            this.WindowState = FormWindowState.Minimized;
         }
 
         private void btnMaximizar_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Lo lamentamos, esta pestaña no se puede agrandar");
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
-            Close();
+            Application.Exit();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -41,15 +44,23 @@ namespace FoodFusion
 
             if (nombre == "admin" && password == "/A@495067") 
             {
-                FormsAdmin frm = new FormsAdmin();
+                frmControllerUser frm1 = new frmControllerUser();
                 this.Visible = false;
-                frm.ShowDialog();
+                frm1.StartPosition = FormStartPosition.CenterParent;
+                frm1.ShowDialog();
+            }
+            else if(nombre == "kitchen" && password == "/@R2014")
+            {
+                FormsAdmin frm2 = new FormsAdmin();
+                this.Visible = false;
+                frm2.ShowDialog();
             }
             else if(nombre == "" && password == "")
             {
-                frmInicio frm2 = new frmInicio();
+                frmInicio frm3 = new frmInicio();
                 this.Visible = false;
-                frm2.ShowDialog();
+                frm3.StartPosition = FormStartPosition.CenterParent;
+                frm3.ShowDialog();
             }
             else
             {
