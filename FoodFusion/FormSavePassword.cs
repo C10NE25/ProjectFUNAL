@@ -55,10 +55,17 @@ namespace FoodFusion
         private void btnSavePassword_Click(object sender, EventArgs e)
         {
             string correo = txtBEmail.Text;
-            VerificarExistenciaCorreo(correo);
+            string codigo = txtBCodigo.Text;
+            bool VerificationEmail = VerificarExistenciaCorreo(correo, out string contraseña);
+            bool VerificationCodigo = VerificarExistenciaCodigo(codigo);
+
+            if (VerificationCodigo && VerificationEmail)
+            {
+                MessageBox.Show($"Contraseña: {contraseña}");
+            }
         }
 
-        private bool VerificarExistenciaCorreo(string correo)
+        private bool VerificarExistenciaCorreo(string correo, out string contraseña)
         {
             //Lee todas las lineas del archivo
             string[] lineas = File.ReadAllLines(database);
@@ -66,13 +73,32 @@ namespace FoodFusion
             // Se busca el correo electronico
             foreach (string linea in lineas)
             {
-                if (linea.Contains("Email: " + correo))
+                if (linea.Contains("Email: " + correo) && linea.Contains("Password: "))
+                {
+                    // Obtiene la contraseña y la devuelve
+                    contraseña = linea.Split(new[] { "Password: " }, StringSplitOptions.None)[1].Trim();
+                    return true;
+                }
+            }
+            contraseña = "No se encontró la contraseña";
+            return false;
+        }
+
+        private bool VerificarExistenciaCodigo(string codigo)
+        {
+            //Lee todas las lineas del archivo
+            string[] lineas = File.ReadAllLines(database);
+
+            // Se busca el correo electronico
+            foreach (string linea in lineas)
+            {
+                if (linea.Contains("Codigo: " + codigo))
                 {
                     return true;
                 }
                 else
                 {
-                    MessageBox.Show("No se encuentra el correo");
+                    MessageBox.Show("No se encuentra el codigo");
                 }
             }
             return false;

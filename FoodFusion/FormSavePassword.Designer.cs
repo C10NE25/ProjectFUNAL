@@ -40,6 +40,8 @@
             pbQuestionSP = new PictureBox();
             pbOndasSP = new PictureBox();
             pictureBox1 = new PictureBox();
+            txtBCodigo = new TextBox();
+            lblCodigo = new Label();
             PanelSaveP.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pbQuestionSP).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbOndasSP).BeginInit();
@@ -100,13 +102,13 @@
             lblSaveP.Font = new Font("Tw Cen MT Condensed Extra Bold", 16F, FontStyle.Regular, GraphicsUnit.Point);
             lblSaveP.Location = new Point(63, 117);
             lblSaveP.Name = "lblSaveP";
-            lblSaveP.Size = new Size(253, 52);
+            lblSaveP.Size = new Size(246, 52);
             lblSaveP.TabIndex = 1;
-            lblSaveP.Text = "¿Has olvidado tu contraseña? \r\nNo te preocupes, recuperala";
+            lblSaveP.Text = "    ¿Olvidaste tus datos? \r\nNo te preocupes, recuperalos";
             // 
             // btnSavePassword
             // 
-            btnSavePassword.Location = new Point(108, 245);
+            btnSavePassword.Location = new Point(111, 264);
             btnSavePassword.Name = "btnSavePassword";
             btnSavePassword.Size = new Size(134, 40);
             btnSavePassword.TabIndex = 2;
@@ -125,7 +127,7 @@
             // 
             // txtBEmail
             // 
-            txtBEmail.Location = new Point(74, 187);
+            txtBEmail.Location = new Point(80, 182);
             txtBEmail.Name = "txtBEmail";
             txtBEmail.Size = new Size(230, 23);
             txtBEmail.TabIndex = 4;
@@ -143,7 +145,7 @@
             // pbOndasSP
             // 
             pbOndasSP.Image = Properties.Resources.Ondas_Fondo_removebg_preview;
-            pbOndasSP.Location = new Point(287, 245);
+            pbOndasSP.Location = new Point(287, 264);
             pbOndasSP.Name = "pbOndasSP";
             pbOndasSP.Size = new Size(127, 104);
             pbOndasSP.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -160,12 +162,30 @@
             pictureBox1.TabIndex = 8;
             pictureBox1.TabStop = false;
             // 
+            // txtBCodigo
+            // 
+            txtBCodigo.Location = new Point(80, 219);
+            txtBCodigo.Name = "txtBCodigo";
+            txtBCodigo.Size = new Size(230, 23);
+            txtBCodigo.TabIndex = 9;
+            // 
+            // lblCodigo
+            // 
+            lblCodigo.AutoSize = true;
+            lblCodigo.Location = new Point(22, 219);
+            lblCodigo.Name = "lblCodigo";
+            lblCodigo.Size = new Size(46, 15);
+            lblCodigo.TabIndex = 10;
+            lblCodigo.Text = "Codigo";
+            // 
             // FormSavePassword
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
-            ClientSize = new Size(376, 308);
+            ClientSize = new Size(376, 327);
+            Controls.Add(lblCodigo);
+            Controls.Add(txtBCodigo);
             Controls.Add(pictureBox1);
             Controls.Add(pbOndasSP);
             Controls.Add(pbQuestionSP);
@@ -200,5 +220,7 @@
         private PictureBox pbQuestionSP;
         private PictureBox pbOndasSP;
         private PictureBox pictureBox1;
+        private TextBox txtBCodigo;
+        private Label lblCodigo;
     }
 }
