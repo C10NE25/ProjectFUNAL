@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Text.RegularExpressions;
 
 namespace FoodFusion
 {
@@ -30,14 +31,37 @@ namespace FoodFusion
         
         private void DataSave()
         {
+            //Reasignamos las variables
             String nombre = txtBName.Text;
             String email = txtBEmail.Text;
             String password = txtBPasswordRegister.Text;
             String user = txtBUser.Text;
-
+            if (user.Length == 0 || nombre.Length == 0 || email.Length == 0 || password.Length == 0)
+            {
+                MessageBox.Show("Debe rellenar todos los campos");
+                return;
+            }
+            else if (user.Length < 5)
+            {
+                MessageBox.Show("El usuario debe tener más de 5 caracteres");
+                return;
+            }
+            if (!Regex.IsMatch(nombre, @"^[a-zA-Z]+$"))
+            {
+                MessageBox.Show("Solo se admiten letras");
+                return;
+            }
+            if(user.Length == 0 || nombre.Length == 0 || email.Length == 0 || password.Length == 0)
+            {
+                MessageBox.Show("Debe rellenar todos los campos");
+                return;
+            }
+            //Utilizamos funciones para los registros
             TextWriter RegisterUser = new StreamWriter(database, true);
             RegisterUser.WriteLine($"Nombre: {nombre}, Password: {password}, Email: {email}, Username: {user}");
             RegisterUser.Close();
+            MessageBox.Show("Se ha registrado correctamente");
+            //Validamos entradas
             this.Visible = false;
         }
 
