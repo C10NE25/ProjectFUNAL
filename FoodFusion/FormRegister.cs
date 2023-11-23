@@ -65,7 +65,7 @@ namespace FoodFusion
                 for (int i = 0; i < 4; i++)
                 {
                     String codigo = GeneracionAleatoriaCodigo();
-                    GenerationCodify.Append($"{codigo}, ");
+                    GenerationCodify.Append($"Codigo {i + 1}: {codigo},");
                 }
                 RegisterUser.WriteLine(GenerationCodify.ToString());
                 MessageBox.Show($"Se ha registrado correctamente\nApunte estos códigos:\n{GenerationCodify}");
