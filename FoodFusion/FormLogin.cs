@@ -49,74 +49,58 @@ namespace FoodFusion
 
             if (File.Exists(database))
             {
-                try 
+                if (nombre == "admin" && password == "12345")
                 {
-                    if (nombre == "admin" && password == "12345")
-                    {
-                        frmControllerUser frm1 = new frmControllerUser();
-                        this.Visible = false;
-                        frm1.StartPosition = FormStartPosition.CenterParent;
-                        frm1.ShowDialog();
-                    }
-                    else if (nombre == "kitchen" && password == "56789")
-                    {
-                        FormsAdmin frm2 = new FormsAdmin();
-                        this.Visible = false;
-                        frm2.ShowDialog();
-                    }
-                    else if (ValidarInicioSesion(nombre, password))
-                    {
-                        frmInicio frm3 = new frmInicio();
-                        frm3.ShowDialog();
-                        this.Visible = false;
-                    }
-                    else
-                    {
-                        MessageBox.Show("Registrese, o revise sus credenciales");
-                    }
-                } 
-                catch (Exception x)
+                    frmControllerUser frm1 = new frmControllerUser();
+                    this.Visible = false;
+                    frm1.StartPosition = FormStartPosition.CenterParent;
+                    frm1.ShowDialog();
+                }
+                else if (nombre == "kitchen" && password == "56789")
                 {
-                    MessageBox.Show($"Error al leer el archivo: {x.Message}");
+                    FormsAdmin frm2 = new FormsAdmin();
+                    this.Visible = false;
+                    frm2.ShowDialog();
+                }
+                else if (ValidarInicioSesion(nombre, password))
+                {
+                    frmInicio frm3 = new frmInicio();
+                    frm3.ShowDialog();
+                    this.Visible = false;
+                }
+                else
+                {
+                    MessageBox.Show("Registrese, o revise sus credenciales");
                 }
             }
         }
 
         private bool ValidarInicioSesion(string nombre, string password)
         {
-            try
+            using (StreamReader sr = new StreamReader(database))
             {
-                // Lee cada línea del archivo y valida el usuario y la contraseña
-                using (StreamReader sr = new StreamReader(database))
+                string linea;
+                while ((linea = sr.ReadLine()) != null)
                 {
-                    string linea;
-                    while ((linea = sr.ReadLine()) != null)
+                    // Dividir la línea en partes utilizando la coma como separador
+                    string[] partes = linea.Split(',');
+
+                    // Validar que haya al menos 4 partes
+                    if (partes.Length >= 4)
                     {
-                        // Dividir la línea en partes utilizando la coma como separador
-                        string[] partes = linea.Split(',');
+                        // Obtener el nombre de usuario y la contraseña de las partes
+                        string usuario = partes[3].Split(':')[1].Trim();
+                        string pass = partes[1].Split(':')[1].Trim();
 
-                        // Validar que haya al menos 4 partes
-                        if (partes.Length >= 4)
+                        // Validar el nombre de usuario y la contraseña
+                        if (nombre == usuario && password == pass)
                         {
-                            // Obtener el nombre de usuario y la contraseña de las partes
-                            string usuario = partes[3].Split(':')[1].Trim();
-                            string pass = partes[1].Split(':')[1].Trim();
-
-                            // Validar el nombre de usuario y la contraseña
-                            if (nombre == usuario && password == pass)
-                            {
-                                return true;
-                            }
+                            return true;
                         }
                     }
                 }
+                return false;
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error al leer el archivo: {ex.Message}");
-            }
-
-            return false; 
         }
 
 
