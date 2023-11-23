@@ -28,7 +28,7 @@ namespace FoodFusion
         {
 
         }
-        
+
         private void DataSave()
         {
             //Reasignamos las variables
@@ -52,7 +52,7 @@ namespace FoodFusion
                 MessageBox.Show("Solo se admiten letras");
                 return;
             }
-            if(user.Length == 0 || nombre.Length == 0 || email.Length == 0 || password.Length == 0)
+            if (user.Length == 0 || nombre.Length == 0 || email.Length == 0 || password.Length == 0)
             {
                 MessageBox.Show("Debe rellenar todos los campos");
                 return;
@@ -65,7 +65,7 @@ namespace FoodFusion
                 for (int i = 0; i < 4; i++)
                 {
                     String codigo = GeneracionAleatoriaCodigo();
-                    GenerationCodify.Append($"Codigo {i + 1}: {codigo},");
+                    GenerationCodify.Append($" Codigo {i + 1}: {codigo},");
                 }
                 RegisterUser.WriteLine(GenerationCodify.ToString());
                 MessageBox.Show($"Se ha registrado correctamente\nApunte estos códigos:\n{GenerationCodify}");
@@ -76,7 +76,7 @@ namespace FoodFusion
         private string GeneracionAleatoriaCodigo()
         {
             Random random = new Random();
-            int codigo = random.Next(1000, 10000); 
+            int codigo = random.Next(1000, 10000);
 
             return codigo.ToString();
         }
@@ -112,6 +112,11 @@ namespace FoodFusion
         }
 
         private void lblCorreo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnMaximizar_Click(object sender, EventArgs e)
         {
 
         }

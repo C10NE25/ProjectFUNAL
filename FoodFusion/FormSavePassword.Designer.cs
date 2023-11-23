@@ -37,8 +37,6 @@
             btnSavePassword = new Button();
             lblEmail = new Label();
             txtBEmail = new TextBox();
-            txtBCodigo = new TextBox();
-            lblCodigo = new Label();
             pbQuestionSP = new PictureBox();
             pbOndasSP = new PictureBox();
             pictureBox1 = new PictureBox();
@@ -108,12 +106,13 @@
             // 
             // btnSavePassword
             // 
-            btnSavePassword.Location = new Point(115, 284);
+            btnSavePassword.Location = new Point(107, 233);
             btnSavePassword.Name = "btnSavePassword";
             btnSavePassword.Size = new Size(134, 40);
             btnSavePassword.TabIndex = 2;
             btnSavePassword.Text = "Save Password";
             btnSavePassword.UseVisualStyleBackColor = true;
+            btnSavePassword.Click += btnSavePassword_Click;
             // 
             // lblEmail
             // 
@@ -131,22 +130,6 @@
             txtBEmail.Size = new Size(230, 23);
             txtBEmail.TabIndex = 4;
             // 
-            // txtBCodigo
-            // 
-            txtBCodigo.Location = new Point(74, 236);
-            txtBCodigo.Name = "txtBCodigo";
-            txtBCodigo.Size = new Size(230, 23);
-            txtBCodigo.TabIndex = 5;
-            // 
-            // lblCodigo
-            // 
-            lblCodigo.AutoSize = true;
-            lblCodigo.Location = new Point(22, 239);
-            lblCodigo.Name = "lblCodigo";
-            lblCodigo.Size = new Size(46, 15);
-            lblCodigo.TabIndex = 6;
-            lblCodigo.Text = "Código";
-            // 
             // pbQuestionSP
             // 
             pbQuestionSP.Image = Properties.Resources.Icon_Question_Save_Password;
@@ -160,7 +143,7 @@
             // pbOndasSP
             // 
             pbOndasSP.Image = Properties.Resources.Ondas_Fondo_removebg_preview;
-            pbOndasSP.Location = new Point(299, 275);
+            pbOndasSP.Location = new Point(287, 269);
             pbOndasSP.Name = "pbOndasSP";
             pbOndasSP.Size = new Size(127, 104);
             pbOndasSP.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -182,12 +165,10 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
-            ClientSize = new Size(376, 340);
+            ClientSize = new Size(376, 332);
             Controls.Add(pictureBox1);
             Controls.Add(pbOndasSP);
             Controls.Add(pbQuestionSP);
-            Controls.Add(lblCodigo);
-            Controls.Add(txtBCodigo);
             Controls.Add(txtBEmail);
             Controls.Add(lblEmail);
             Controls.Add(btnSavePassword);
@@ -213,8 +194,6 @@
         private Button btnSavePassword;
         private Label lblEmail;
         private TextBox txtBEmail;
-        private TextBox txtBCodigo;
-        private Label lblCodigo;
         private Button btnCerrarSP;
         private Button btnExpandirSP;
         private Button btnMinimizarSP;

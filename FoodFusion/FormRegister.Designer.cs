@@ -130,6 +130,7 @@
             btnMaximizar.Size = new Size(23, 23);
             btnMaximizar.TabIndex = 1;
             btnMaximizar.UseVisualStyleBackColor = true;
+            btnMaximizar.Click += btnMaximizar_Click;
             // 
             // btnCerrar
             // 
