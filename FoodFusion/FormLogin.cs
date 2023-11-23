@@ -61,7 +61,7 @@ namespace FoodFusion
                     this.Visible = false;
                     frm2.ShowDialog();
                 }
-                else if (ValidarCredenciales(nombre, password))
+                else if (ValidarInicioSesion(nombre, password))
                 {
                     frmInicio frm3 = new frmInicio();
                     frm3.ShowDialog();
@@ -69,7 +69,7 @@ namespace FoodFusion
                 }
                 else
                 {
-                    MessageBox.Show("Error, la contraseña o el usuario es incorrecto");
+                    MessageBox.Show("Registrese, o revise sus credenciales");
                 }
             }
             
@@ -77,21 +77,30 @@ namespace FoodFusion
 
         }
 
-        private bool ValidarCredenciales(string username, string password)
+        private bool ValidarInicioSesion(string nombre, string password)
         {
+            // Lee cada línea del archivo y valida el usuario y la contraseña
             using (StreamReader sr = new StreamReader(database))
             {
-                while (!sr.EndOfStream)
+                string linea;
+                while ((linea = sr.ReadLine()) != null)
                 {
-                    string linea = sr.ReadLine();
-                    if (linea.Contains("Username:") && linea.Contains("Password:"))
+                    // Dividir la línea en partes utilizando la coma como separador
+                    string[] partes = linea.Split(',');
+
+                    // Obtener el nombre de usuario y la contraseña de las partes
+                    string usuario = partes[3].Split(':')[1].Trim();
+                    string pass = partes[1].Split(':')[1].Trim();
+
+                    // Validar el nombre de usuario y la contraseña
+                    if (nombre == usuario && password == pass)
                     {
-                        return true; // Las credenciales son válidas
+                        return true; // Usuario y contraseña válidos
                     }
                 }
             }
 
-            return false; // No se encontraron credenciales coincidentes
+            return false; // Usuario y contraseña no encontrados
         }
 
 

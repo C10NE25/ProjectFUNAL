@@ -30,8 +30,13 @@ namespace FoodFusion
         
         private void DataSave()
         {
-            TextWriter RegisterUser = new StreamWriter(database);
-            RegisterUser.WriteLine($"Nombre: {txtBName.Text}, Password: {txtBPasswordRegister.Text}, Email: {txtBEmail.Text}, Username: {txtBUser.Text}");
+            String nombre = txtBName.Text;
+            String email = txtBEmail.Text;
+            String password = txtBPasswordRegister.Text;
+            String user = txtBUser.Text;
+
+            TextWriter RegisterUser = new StreamWriter(database, true);
+            RegisterUser.WriteLine($"Nombre: {nombre}, Password: {password}, Email: {email}, Username: {user}");
             RegisterUser.Close();
             this.Visible = false;
         }
