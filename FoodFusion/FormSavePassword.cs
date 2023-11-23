@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using static TheArtOfDevHtmlRenderer.Adapters.RGraphicsPath;
 
 namespace FoodFusion
 {
@@ -15,7 +16,7 @@ namespace FoodFusion
     {
         int X = 0;
         int Y = 0;
-        public string database = @"D:\ProjectFUNAL\C10NE25\DATABASE\Users.txt";
+        private string database = @"D:\ProjectFUNAL\C10NE25\DATABASE\Users.txt";
 
         public FormSavePassword()
         {
@@ -53,7 +54,30 @@ namespace FoodFusion
 
         private void btnSavePassword_Click(object sender, EventArgs e)
         {
+            string correo = txtBEmail.Text;
+            VerificarExistenciaCorreo(correo);
+        }
 
+        private bool VerificarExistenciaCorreo(string correo)
+        {
+            //Lee todas las lineas del archivo
+            string[] lineas = File.ReadAllLines(database);
+
+            // Se busca el correo electronico
+            foreach (string linea in lineas)
+            {
+                if (linea.Contains("Email: " + correo))
+                {
+                    AcessPass form2 = new AcessPass();
+                    form2.Show();
+                    return true;
+                }
+                else
+                {
+                    MessageBox.Show("No se encuentra el correo");
+                }
+            }
+            return false;
         }
     }
 

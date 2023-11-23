@@ -61,15 +61,8 @@ namespace FoodFusion
             using (TextWriter RegisterUser = new StreamWriter(database, true))
             {
                 RegisterUser.WriteLine($"Nombre: {nombre}, Password: {password}, Email: {email}, Username: {user}");
-                StringBuilder GenerationCodify = new StringBuilder();
-                for (int i = 0; i < 4; i++)
-                {
-                    String codigo = GeneracionAleatoriaCodigo();
-                    GenerationCodify.Append($" Codigo {i + 1}: {codigo},");
-                }
-                RegisterUser.WriteLine(GenerationCodify.ToString());
-                MessageBox.Show($"Se ha registrado correctamente\nApunte estos códigos:\n{GenerationCodify}");
-                this.Visible = false;
+                MessageBox.Show($"Se ha registrado correctamente");
+                this.Visible = false; 
             }
         }
 
