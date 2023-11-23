@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             dataGridView1 = new DataGridView();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
+            btnEliminar = new Button();
+            btnModificar = new Button();
+            btnClean = new Button();
             label1 = new Label();
             label2 = new Label();
             groupBox1 = new GroupBox();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            txtID = new TextBox();
             label3 = new Label();
-            textBox3 = new TextBox();
+            txtPassword = new TextBox();
+            txtUser = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             groupBox1.SuspendLayout();
             SuspendLayout();
@@ -49,35 +49,36 @@
             dataGridView1.Location = new Point(12, 207);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(599, 128);
+            dataGridView1.Size = new Size(534, 128);
             dataGridView1.TabIndex = 0;
             // 
-            // button1
+            // btnEliminar
             // 
-            button1.Location = new Point(243, 132);
-            button1.Name = "button1";
-            button1.Size = new Size(76, 29);
-            button1.TabIndex = 1;
-            button1.Text = "Eliminar";
-            button1.UseVisualStyleBackColor = true;
+            btnEliminar.Location = new Point(209, 132);
+            btnEliminar.Name = "btnEliminar";
+            btnEliminar.Size = new Size(76, 29);
+            btnEliminar.TabIndex = 1;
+            btnEliminar.Text = "Eliminar";
+            btnEliminar.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnModificar
             // 
-            button2.Location = new Point(52, 132);
-            button2.Name = "button2";
-            button2.Size = new Size(76, 29);
-            button2.TabIndex = 2;
-            button2.Text = "Modificar";
-            button2.UseVisualStyleBackColor = true;
+            btnModificar.Location = new Point(52, 132);
+            btnModificar.Name = "btnModificar";
+            btnModificar.Size = new Size(76, 29);
+            btnModificar.TabIndex = 2;
+            btnModificar.Text = "Modificar";
+            btnModificar.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnClean
             // 
-            button3.Location = new Point(447, 132);
-            button3.Name = "button3";
-            button3.Size = new Size(76, 29);
-            button3.TabIndex = 3;
-            button3.Text = "Limpiar";
-            button3.UseVisualStyleBackColor = true;
+            btnClean.Location = new Point(405, 132);
+            btnClean.Name = "btnClean";
+            btnClean.Size = new Size(76, 29);
+            btnClean.TabIndex = 3;
+            btnClean.Text = "Limpiar";
+            btnClean.UseVisualStyleBackColor = true;
+            btnClean.Click += btnClean_Click;
             // 
             // label1
             // 
@@ -91,7 +92,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(347, 37);
+            label2.Location = new Point(276, 37);
             label2.Name = "label2";
             label2.Size = new Size(57, 15);
             label2.TabIndex = 5;
@@ -99,35 +100,28 @@
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(textBox3);
+            groupBox1.Controls.Add(txtID);
             groupBox1.Controls.Add(label3);
-            groupBox1.Controls.Add(textBox2);
-            groupBox1.Controls.Add(textBox1);
+            groupBox1.Controls.Add(txtPassword);
+            groupBox1.Controls.Add(txtUser);
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(label1);
-            groupBox1.Controls.Add(button3);
-            groupBox1.Controls.Add(button2);
-            groupBox1.Controls.Add(button1);
+            groupBox1.Controls.Add(btnClean);
+            groupBox1.Controls.Add(btnModificar);
+            groupBox1.Controls.Add(btnEliminar);
             groupBox1.Location = new Point(12, 12);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(599, 174);
+            groupBox1.Size = new Size(534, 174);
             groupBox1.TabIndex = 6;
             groupBox1.TabStop = false;
             groupBox1.Text = "User Controller";
             // 
-            // textBox1
+            // txtID
             // 
-            textBox1.Location = new Point(68, 34);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(168, 23);
-            textBox1.TabIndex = 6;
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(420, 34);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(151, 23);
-            textBox2.TabIndex = 7;
+            txtID.Location = new Point(68, 79);
+            txtID.Name = "txtID";
+            txtID.Size = new Size(168, 23);
+            txtID.TabIndex = 9;
             // 
             // label3
             // 
@@ -138,18 +132,25 @@
             label3.TabIndex = 8;
             label3.Text = "ID";
             // 
-            // textBox3
+            // txtPassword
             // 
-            textBox3.Location = new Point(68, 79);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(251, 23);
-            textBox3.TabIndex = 9;
+            txtPassword.Location = new Point(351, 34);
+            txtPassword.Name = "txtPassword";
+            txtPassword.Size = new Size(151, 23);
+            txtPassword.TabIndex = 7;
+            // 
+            // txtUser
+            // 
+            txtUser.Location = new Point(68, 34);
+            txtUser.Name = "txtUser";
+            txtUser.Size = new Size(168, 23);
+            txtUser.TabIndex = 6;
             // 
             // frmControllerUser
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(623, 347);
+            ClientSize = new Size(556, 347);
             Controls.Add(groupBox1);
             Controls.Add(dataGridView1);
             Name = "frmControllerUser";
@@ -163,15 +164,15 @@
         #endregion
 
         private DataGridView dataGridView1;
-        private Button button1;
-        private Button button2;
-        private Button button3;
+        private Button btnEliminar;
+        private Button btnModificar;
+        private Button btnClean;
         private Label label1;
         private Label label2;
         private GroupBox groupBox1;
-        private TextBox textBox2;
-        private TextBox textBox1;
-        private TextBox textBox3;
+        private TextBox txtPassword;
+        private TextBox txtUser;
+        private TextBox txtID;
         private Label label3;
     }
 }

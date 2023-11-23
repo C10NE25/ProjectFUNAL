@@ -1,4 +1,6 @@
 using System.Windows.Forms;
+using System.IO;
+
 
 namespace FoodFusion
 {
@@ -39,37 +41,38 @@ namespace FoodFusion
 
         private void button1_Click(object sender, EventArgs e)
         {
+
             //Asignamos las variable un valor.
             string nombre = txtBUser.Text;
             string password = txtBPassword.Text;
-
-            if (nombre == "admin" && password == "/A@495067")
+            
+            if (nombre == "admin" && password == "12345")
             {
                 frmControllerUser frm1 = new frmControllerUser();
                 this.Visible = false;
                 frm1.StartPosition = FormStartPosition.CenterParent;
                 frm1.ShowDialog();
             }
-            else if (nombre == "kitchen" && password == "/@R2014")
+            else if (nombre == "kitchen" && password == "56789")
             {
                 FormsAdmin frm2 = new FormsAdmin();
                 this.Visible = false;
                 frm2.ShowDialog();
             }
-            else if (nombre == "" && password == "")
-            {
-                frmInicio frm3 = new frmInicio();
-                this.Visible = false;
-                frm3.StartPosition = FormStartPosition.CenterParent;
-                frm3.ShowDialog();
-            }
             else
             {
-                MessageBox.Show("Error: Revise los datos nuevamente");
+                frmInicio frm3 = new frmInicio();
+                frm3.ShowDialog();
+                this.Visible = false;
             }
+
             //Hacer una funcion que valide los datos dentro del datagriedview
 
+
+
         }
+
+
 
         private void lblPassword_Click(object sender, EventArgs e)
         {
@@ -112,5 +115,7 @@ namespace FoodFusion
             Save.ShowDialog();
 
         }
+
+ 
     }
 }
