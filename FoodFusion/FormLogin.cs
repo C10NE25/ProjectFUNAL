@@ -72,6 +72,11 @@ namespace FoodFusion
                     frm3.ShowDialog();
                     this.Visible = false;
                 }
+                else if (!ValidarInicioSesion(nombre, password))
+                {
+                    MessageBox.Show("Contraseña o usuario incorrecto");
+                    return;
+                }
             }
         }
 
@@ -96,6 +101,10 @@ namespace FoodFusion
                         if (nombre == usuario && password == pass)
                         {
                             return true;
+                        }
+                        else
+                        {
+                            return false;
                         }
                     }
                 }
