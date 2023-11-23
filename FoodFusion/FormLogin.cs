@@ -116,7 +116,7 @@ namespace FoodFusion
                 MessageBox.Show($"Error al leer el archivo: {ex.Message}");
             }
 
-            return false;
+            return false; 
         }
 
 
