@@ -46,61 +46,77 @@ namespace FoodFusion
             //Asignamos las variable un valor.
             string nombre = txtBUser.Text;
             string password = txtBPassword.Text;
+
             if (File.Exists(database))
             {
-                if (nombre == "admin" && password == "12345")
+                try 
                 {
-                    frmControllerUser frm1 = new frmControllerUser();
-                    this.Visible = false;
-                    frm1.StartPosition = FormStartPosition.CenterParent;
-                    frm1.ShowDialog();
-                }
-                else if (nombre == "kitchen" && password == "56789")
+                    if (nombre == "admin" && password == "12345")
+                    {
+                        frmControllerUser frm1 = new frmControllerUser();
+                        this.Visible = false;
+                        frm1.StartPosition = FormStartPosition.CenterParent;
+                        frm1.ShowDialog();
+                    }
+                    else if (nombre == "kitchen" && password == "56789")
+                    {
+                        FormsAdmin frm2 = new FormsAdmin();
+                        this.Visible = false;
+                        frm2.ShowDialog();
+                    }
+                    else if (ValidarInicioSesion(nombre, password))
+                    {
+                        frmInicio frm3 = new frmInicio();
+                        frm3.ShowDialog();
+                        this.Visible = false;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Registrese, o revise sus credenciales");
+                    }
+                } 
+                catch (Exception x)
                 {
-                    FormsAdmin frm2 = new FormsAdmin();
-                    this.Visible = false;
-                    frm2.ShowDialog();
-                }
-                else if (ValidarInicioSesion(nombre, password))
-                {
-                    frmInicio frm3 = new frmInicio();
-                    frm3.ShowDialog();
-                    this.Visible = false;
-                }
-                else
-                {
-                    MessageBox.Show("Registrese, o revise sus credenciales");
+                    MessageBox.Show($"Error al leer el archivo: {x.Message}");
                 }
             }
-            
-            //Hacer una funcion que valide los datos dentro del datagriedview
-
         }
 
         private bool ValidarInicioSesion(string nombre, string password)
         {
-            // Lee cada línea del archivo y valida el usuario y la contraseña
-            using (StreamReader sr = new StreamReader(database))
+            try
             {
-                string linea;
-                while ((linea = sr.ReadLine()) != null)
+                // Lee cada línea del archivo y valida el usuario y la contraseña
+                using (StreamReader sr = new StreamReader(database))
                 {
-                    // Dividir la línea en partes utilizando la coma como separador
-                    string[] partes = linea.Split(',');
-
-                    // Obtener el nombre de usuario y la contraseña de las partes
-                    string usuario = partes[3].Split(':')[1].Trim();
-                    string pass = partes[1].Split(':')[1].Trim();
-
-                    // Validar el nombre de usuario y la contraseña
-                    if (nombre == usuario && password == pass)
+                    string linea;
+                    while ((linea = sr.ReadLine()) != null)
                     {
-                        return true; // Usuario y contraseña válidos
+                        // Dividir la línea en partes utilizando la coma como separador
+                        string[] partes = linea.Split(',');
+
+                        // Validar que haya al menos 4 partes
+                        if (partes.Length >= 4)
+                        {
+                            // Obtener el nombre de usuario y la contraseña de las partes
+                            string usuario = partes[3].Split(':')[1].Trim();
+                            string pass = partes[1].Split(':')[1].Trim();
+
+                            // Validar el nombre de usuario y la contraseña
+                            if (nombre == usuario && password == pass)
+                            {
+                                return true;
+                            }
+                        }
                     }
                 }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al leer el archivo: {ex.Message}");
+            }
 
-            return false; // Usuario y contraseña no encontrados
+            return false;
         }
 
 

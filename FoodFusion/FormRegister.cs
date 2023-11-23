@@ -36,6 +36,7 @@ namespace FoodFusion
             String email = txtBEmail.Text;
             String password = txtBPasswordRegister.Text;
             String user = txtBUser.Text;
+            //Validamos cada campo
             if (user.Length == 0 || nombre.Length == 0 || email.Length == 0 || password.Length == 0)
             {
                 MessageBox.Show("Debe rellenar todos los campos");
@@ -57,12 +58,27 @@ namespace FoodFusion
                 return;
             }
             //Utilizamos funciones para los registros
-            TextWriter RegisterUser = new StreamWriter(database, true);
-            RegisterUser.WriteLine($"Nombre: {nombre}, Password: {password}, Email: {email}, Username: {user}");
-            RegisterUser.Close();
-            MessageBox.Show("Se ha registrado correctamente");
-            //Validamos entradas
-            this.Visible = false;
+            using (TextWriter RegisterUser = new StreamWriter(database, true))
+            {
+                RegisterUser.WriteLine($"Nombre: {nombre}, Password: {password}, Email: {email}, Username: {user}");
+                StringBuilder GenerationCodify = new StringBuilder();
+                for (int i = 0; i < 4; i++)
+                {
+                    String codigo = GeneracionAleatoriaCodigo();
+                    GenerationCodify.Append($"{codigo}, ");
+                }
+                RegisterUser.WriteLine(GenerationCodify.ToString());
+                MessageBox.Show($"Se ha registrado correctamente\nApunte estos códigos:\n{GenerationCodify}");
+                this.Visible = false;
+            }
+        }
+
+        private string GeneracionAleatoriaCodigo()
+        {
+            Random random = new Random();
+            int codigo = random.Next(1000, 10000); 
+
+            return codigo.ToString();
         }
 
         private void btnRegister_Click(object sender, EventArgs e)
