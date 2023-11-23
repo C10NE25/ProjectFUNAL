@@ -74,12 +74,14 @@ namespace FoodFusion
 
         private void button1_Click_2(object sender, EventArgs e)
         {
-            Close();
+            Form formulario = new Thfinal();
+            formulario.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Close();
+            Form formulario = new Thfinal();
+            formulario.Show();
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -89,17 +91,25 @@ namespace FoodFusion
 
         private void button5_Click(object sender, EventArgs e)
         {
-            Close();
+            Form formulario = new Thfinal();
+            formulario.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Close();
+            Form formulario = new Thfinal();
+            formulario.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Close();
+            Form formulario = new Thfinal();
+            formulario.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
