@@ -49,7 +49,11 @@ namespace FoodFusion
 
             if (File.Exists(database))
             {
-                if (nombre == "admin" && password == "12345")
+                if (nombre == "" && password == "")
+                {
+                    MessageBox.Show("Registrese, o revise sus credenciales");
+                }
+                else if (nombre == "admin" && password == "12345")
                 {
                     frmControllerUser frm1 = new frmControllerUser();
                     this.Visible = false;
@@ -67,10 +71,6 @@ namespace FoodFusion
                     frmInicio frm3 = new frmInicio();
                     frm3.ShowDialog();
                     this.Visible = false;
-                }
-                else
-                {
-                    MessageBox.Show("Registrese, o revise sus credenciales");
                 }
             }
         }
@@ -99,7 +99,7 @@ namespace FoodFusion
                         }
                     }
                 }
-                return false;
+                return false;   
             }
         }
 
