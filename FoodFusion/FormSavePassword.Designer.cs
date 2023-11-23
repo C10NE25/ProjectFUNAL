@@ -143,7 +143,7 @@
             // pbOndasSP
             // 
             pbOndasSP.Image = Properties.Resources.Ondas_Fondo_removebg_preview;
-            pbOndasSP.Location = new Point(287, 269);
+            pbOndasSP.Location = new Point(287, 245);
             pbOndasSP.Name = "pbOndasSP";
             pbOndasSP.Size = new Size(127, 104);
             pbOndasSP.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -165,7 +165,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
-            ClientSize = new Size(376, 332);
+            ClientSize = new Size(376, 308);
             Controls.Add(pictureBox1);
             Controls.Add(pbOndasSP);
             Controls.Add(pbQuestionSP);
