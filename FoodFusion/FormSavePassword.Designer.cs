@@ -106,7 +106,7 @@
             // 
             // btnSavePassword
             // 
-            btnSavePassword.Location = new Point(107, 233);
+            btnSavePassword.Location = new Point(108, 245);
             btnSavePassword.Name = "btnSavePassword";
             btnSavePassword.Size = new Size(134, 40);
             btnSavePassword.TabIndex = 2;

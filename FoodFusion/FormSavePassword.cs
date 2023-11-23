@@ -68,8 +68,6 @@ namespace FoodFusion
             {
                 if (linea.Contains("Email: " + correo))
                 {
-                    AcessPass form2 = new AcessPass();
-                    form2.Show();
                     return true;
                 }
                 else

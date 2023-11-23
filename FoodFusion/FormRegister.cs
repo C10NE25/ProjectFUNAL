@@ -58,10 +58,11 @@ namespace FoodFusion
                 return;
             }
             //Utilizamos funciones para los registros
+            string codigo = GeneracionAleatoriaCodigo();
             using (TextWriter RegisterUser = new StreamWriter(database, true))
             {
-                RegisterUser.WriteLine($"Nombre: {nombre}, Password: {password}, Email: {email}, Username: {user}");
-                MessageBox.Show($"Se ha registrado correctamente");
+                RegisterUser.WriteLine($"Nombre: {nombre}, Password: {password}, Email: {email}, Username: {user}, Codigo: {codigo}");
+                MessageBox.Show($"Se ha registrado correctamente\nApunte el siguiente codigo: {codigo}");
                 this.Visible = false; 
             }
         }
