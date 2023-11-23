@@ -13,23 +13,32 @@ namespace FoodFusion
 {
     public partial class FormRegister : Form
     {
+
+        int X = 0;
+        int Y = 0;
+        private string database = @"D:\ProjectFUNAL\C10NE25\DATABASE\Users.txt";
+
         public FormRegister()
         {
             InitializeComponent();
         }
 
-
-        int X = 0;
-        int Y = 0;
         private void label1_Click(object sender, EventArgs e)
         {
 
         }
+        
+        private void DataSave()
+        {
+            TextWriter RegisterUser = new StreamWriter(database);
+            RegisterUser.WriteLine($"Nombre: {txtBName.Text}, Password: {txtBPasswordRegister.Text}, Email: {txtBEmail.Text}, Username: {txtBUser.Text}");
+            RegisterUser.Close();
+            this.Visible = false;
+        }
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            TextWriter RegisterUser = new StreamWriter(@"D:\ProjectFUNAL\C10NE25\ProjectFUNAL\FoodFusion\bin\Debug\" + txtBUser.Text + ".txt", true);
-            RegisterUser.WriteLine($"Nombre: {txtBName.Text}, Password: {txtBPasswordRegister.Text}, Email: {txtBEmail.Text}, Username: {txtBUser.Text}");
+            DataSave();
              
         }
 
