@@ -39,7 +39,6 @@ namespace FoodFusion
         private void btnRegister_Click(object sender, EventArgs e)
         {
             DataSave();
-             
         }
 
 
