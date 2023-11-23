@@ -14,6 +14,8 @@ namespace FoodFusion
     {
         int X = 0;
         int Y = 0;
+        public string database = @"D:\ProjectFUNAL\C10NE25\DATABASE\Users.txt";
+
         public FormSavePassword()
         {
             InitializeComponent();
