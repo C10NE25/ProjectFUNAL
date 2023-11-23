@@ -12,6 +12,8 @@ namespace FoodFusion
 {
     public partial class FormSavePassword : Form
     {
+        int X = 0;
+        int Y = 0;
         public FormSavePassword()
         {
             InitializeComponent();
@@ -30,6 +32,20 @@ namespace FoodFusion
         private void btnMinimizarSP_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
+        }
+
+        private void PanelSaveP_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button != MouseButtons.Left)
+            {
+                X = e.X;
+                Y = e.Y;
+            }
+            else
+            {
+                Left = Left + (e.X - X);
+                Top = Top + (e.Y - Y);
+            }
         }
     }
 }

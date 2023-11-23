@@ -58,6 +58,7 @@
             PanelSaveP.Name = "PanelSaveP";
             PanelSaveP.Size = new Size(377, 31);
             PanelSaveP.TabIndex = 0;
+            PanelSaveP.MouseMove += PanelSaveP_MouseMove;
             // 
             // btnCerrarSP
             // 

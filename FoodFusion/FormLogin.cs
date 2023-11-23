@@ -103,8 +103,6 @@ namespace FoodFusion
             }
         }
 
-
-
         private void lblPassword_Click(object sender, EventArgs e)
         {
 
