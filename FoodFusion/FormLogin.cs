@@ -1,7 +1,7 @@
 using System.Windows.Forms;
 using System.IO;
 using System.Xml.Serialization;
-
+using System.Diagnostics;
 
 namespace FoodFusion
 {
@@ -66,7 +66,7 @@ namespace FoodFusion
                     frm3.ShowDialog();
                     this.Visible = false;
                 }
-                else
+                else if (!ValidarInicioSesion(nombre, password))
                 {
                     MessageBox.Show("Contraseña o usuario incorrecto");
                     return;
@@ -78,6 +78,11 @@ namespace FoodFusion
         {
             using (StreamReader sr = new StreamReader(database))
             {
+                if (!File.Exists(database))
+                {
+                    return false;
+                }
+
                 string linea;
                 while ((linea = sr.ReadLine()) != null)
                 {
@@ -95,10 +100,6 @@ namespace FoodFusion
                         if (nombre == usuario && password == pass)
                         {
                             return true;
-                        }
-                        else
-                        {
-                            return false;
                         }
                     }
                 }

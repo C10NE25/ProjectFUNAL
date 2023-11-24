@@ -119,6 +119,7 @@
             btnMinimizar.Size = new Size(23, 23);
             btnMinimizar.TabIndex = 2;
             btnMinimizar.UseVisualStyleBackColor = true;
+            btnMinimizar.Click += btnMinimizar_Click;
             // 
             // btnMaximizar
             // 

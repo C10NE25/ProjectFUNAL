@@ -58,12 +58,19 @@ namespace FoodFusion
                 return;
             }
             //Utilizamos funciones para los registros
-            string codigo = GeneracionAleatoriaCodigo();
-            using (TextWriter RegisterUser = new StreamWriter(database, true))
+            try
             {
-                RegisterUser.WriteLine($"Nombre: {nombre}, Password: {password}, Email: {email}, Username: {user}, Codigo: {codigo}");
-                MessageBox.Show($"Se ha registrado correctamente\nApunte el siguiente codigo: {codigo}");
-                this.Visible = false; 
+                string codigo = GeneracionAleatoriaCodigo();
+                using (TextWriter RegisterUser = new StreamWriter(database, true))
+                {
+                    RegisterUser.WriteLine($"Nombre: {nombre}, Password: {password}, Email: {email}, Username: {user}, Codigo: {codigo}");
+                    MessageBox.Show($"Se ha registrado correctamente\nApunte el siguiente codigo: {codigo}");
+                    this.Visible = false;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al escribir en el archivo: {ex.Message}");
             }
         }
 
@@ -111,6 +118,11 @@ namespace FoodFusion
         }
 
         private void btnMaximizar_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Lo Lamentamos no se puede maximizar");
+        }
+
+        private void btnMinimizar_Click(object sender, EventArgs e)
         {
 
         }
