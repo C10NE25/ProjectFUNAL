@@ -39,6 +39,8 @@
             label1 = new Label();
             label2 = new Label();
             groupBox1 = new GroupBox();
+            txtEmail = new TextBox();
+            label5 = new Label();
             txtUsuario = new TextBox();
             label4 = new Label();
             txtCodigo = new TextBox();
@@ -46,8 +48,6 @@
             txtPassword = new TextBox();
             txtNombre = new TextBox();
             btmAgregar = new Button();
-            label5 = new Label();
-            txtEmail = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dgvResultado).BeginInit();
             groupBox1.SuspendLayout();
             SuspendLayout();
@@ -56,12 +56,11 @@
             // 
             dgvResultado.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvResultado.Columns.AddRange(new DataGridViewColumn[] { Nombre, Password, Email, Username, Codigo });
-            dgvResultado.Location = new Point(14, 276);
-            dgvResultado.Margin = new Padding(3, 4, 3, 4);
+            dgvResultado.Location = new Point(12, 207);
             dgvResultado.Name = "dgvResultado";
             dgvResultado.RowHeadersWidth = 51;
             dgvResultado.RowTemplate.Height = 25;
-            dgvResultado.Size = new Size(1058, 171);
+            dgvResultado.Size = new Size(677, 128);
             dgvResultado.TabIndex = 0;
             // 
             // Nombre
@@ -101,10 +100,9 @@
             // 
             // btnModificar
             // 
-            btnModificar.Location = new Point(985, 176);
-            btnModificar.Margin = new Padding(3, 4, 3, 4);
+            btnModificar.Location = new Point(582, 128);
             btnModificar.Name = "btnModificar";
-            btnModificar.Size = new Size(87, 39);
+            btnModificar.Size = new Size(76, 29);
             btnModificar.TabIndex = 2;
             btnModificar.Text = "Modificar";
             btnModificar.UseVisualStyleBackColor = true;
@@ -112,10 +110,9 @@
             // 
             // btnClean
             // 
-            btnClean.Location = new Point(985, 49);
-            btnClean.Margin = new Padding(3, 4, 3, 4);
+            btnClean.Location = new Point(582, 78);
             btnClean.Name = "btnClean";
-            btnClean.Size = new Size(87, 39);
+            btnClean.Size = new Size(76, 29);
             btnClean.TabIndex = 3;
             btnClean.Text = "Limpiar";
             btnClean.UseVisualStyleBackColor = true;
@@ -124,18 +121,18 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(18, 45);
+            label1.Location = new Point(16, 34);
             label1.Name = "label1";
-            label1.Size = new Size(38, 20);
+            label1.Size = new Size(30, 15);
             label1.TabIndex = 4;
             label1.Text = "User";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(315, 49);
+            label2.Location = new Point(276, 37);
             label2.Name = "label2";
-            label2.Size = new Size(70, 20);
+            label2.Size = new Size(57, 15);
             label2.TabIndex = 5;
             label2.Text = "Password";
             // 
@@ -151,104 +148,95 @@
             groupBox1.Controls.Add(txtNombre);
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(label1);
-            groupBox1.Location = new Point(14, 16);
-            groupBox1.Margin = new Padding(3, 4, 3, 4);
+            groupBox1.Location = new Point(12, 12);
             groupBox1.Name = "groupBox1";
-            groupBox1.Padding = new Padding(3, 4, 3, 4);
-            groupBox1.Size = new Size(610, 232);
+            groupBox1.Size = new Size(534, 174);
             groupBox1.TabIndex = 6;
             groupBox1.TabStop = false;
             groupBox1.Text = "User Controller";
             // 
+            // txtEmail
+            // 
+            txtEmail.Location = new Point(87, 122);
+            txtEmail.Name = "txtEmail";
+            txtEmail.Size = new Size(168, 23);
+            txtEmail.TabIndex = 13;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(16, 107);
+            label5.Name = "label5";
+            label5.Size = new Size(36, 15);
+            label5.TabIndex = 12;
+            label5.Text = "Email";
+            // 
             // txtUsuario
             // 
-            txtUsuario.Location = new Point(99, 96);
-            txtUsuario.Margin = new Padding(3, 4, 3, 4);
+            txtUsuario.Location = new Point(87, 76);
             txtUsuario.Name = "txtUsuario";
-            txtUsuario.Size = new Size(191, 27);
+            txtUsuario.Size = new Size(168, 23);
             txtUsuario.TabIndex = 11;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(18, 99);
+            label4.Location = new Point(16, 74);
             label4.Name = "label4";
-            label4.Size = new Size(75, 20);
+            label4.Size = new Size(60, 15);
             label4.TabIndex = 10;
             label4.Text = "Username";
             // 
             // txtCodigo
             // 
-            txtCodigo.Location = new Point(401, 96);
-            txtCodigo.Margin = new Padding(3, 4, 3, 4);
+            txtCodigo.Location = new Point(351, 72);
             txtCodigo.Name = "txtCodigo";
-            txtCodigo.Size = new Size(172, 27);
+            txtCodigo.Size = new Size(151, 23);
             txtCodigo.TabIndex = 9;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(330, 99);
+            label3.Location = new Point(289, 74);
             label3.Name = "label3";
-            label3.Size = new Size(58, 20);
+            label3.Size = new Size(46, 15);
             label3.TabIndex = 8;
             label3.Text = "Codigo";
             // 
             // txtPassword
             // 
-            txtPassword.Location = new Point(401, 45);
-            txtPassword.Margin = new Padding(3, 4, 3, 4);
+            txtPassword.Location = new Point(351, 34);
             txtPassword.Name = "txtPassword";
-            txtPassword.Size = new Size(172, 27);
+            txtPassword.Size = new Size(151, 23);
             txtPassword.TabIndex = 7;
             // 
             // txtNombre
             // 
-            txtNombre.Location = new Point(78, 45);
-            txtNombre.Margin = new Padding(3, 4, 3, 4);
+            txtNombre.Location = new Point(87, 31);
             txtNombre.Name = "txtNombre";
-            txtNombre.Size = new Size(191, 27);
+            txtNombre.Size = new Size(168, 23);
             txtNombre.TabIndex = 6;
             // 
             // btmAgregar
             // 
-            btmAgregar.Location = new Point(882, 49);
-            btmAgregar.Margin = new Padding(3, 4, 3, 4);
+            btmAgregar.Location = new Point(582, 32);
             btmAgregar.Name = "btmAgregar";
-            btmAgregar.Size = new Size(87, 39);
+            btmAgregar.Size = new Size(76, 29);
             btmAgregar.TabIndex = 7;
             btmAgregar.Text = "Agregar";
             btmAgregar.UseVisualStyleBackColor = true;
             btmAgregar.Click += btmAgregar_Click;
             // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(18, 143);
-            label5.Name = "label5";
-            label5.Size = new Size(46, 20);
-            label5.TabIndex = 12;
-            label5.Text = "Email";
-            // 
-            // txtEmail
-            // 
-            txtEmail.Location = new Point(99, 140);
-            txtEmail.Margin = new Padding(3, 4, 3, 4);
-            txtEmail.Name = "txtEmail";
-            txtEmail.Size = new Size(191, 27);
-            txtEmail.TabIndex = 13;
-            // 
             // frmControllerUser
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1099, 463);
+            ClientSize = new Size(706, 347);
             Controls.Add(btmAgregar);
             Controls.Add(groupBox1);
             Controls.Add(dgvResultado);
             Controls.Add(btnClean);
             Controls.Add(btnModificar);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "frmControllerUser";
             Text = "ControllerUser";
             ((System.ComponentModel.ISupportInitialize)dgvResultado).EndInit();

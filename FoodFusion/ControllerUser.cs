@@ -114,7 +114,7 @@ namespace FoodFusion
             txtEmail.Text = (string)dgvResultado.Rows[e.RowIndex].Cells[2].Value.ToString();
             txtUsuario.Text = (string)dgvResultado.Rows[e.RowIndex].Cells[3].Value.ToString();
             txtPassword.Text = (string)dgvResultado.Rows[e.RowIndex].Cells[4].Value.ToString();
-            
+
         }
 
         private void dgvResultado_CellContentClick(object sender, DataGridViewCellEventArgs e)
