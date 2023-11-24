@@ -73,7 +73,7 @@ namespace FoodFusion
             // Se busca el correo electronico
             foreach (string linea in lineas)
             {
-                if (linea.Contains("Email: " + correo) && linea.Contains("Password: "))
+                if (linea.Contains($"Email: {correo}") && linea.Contains("Password: "))
                 {
                     // Obtiene la contraseña y la devuelve
                     contraseña = linea.Split(new[] { "Password: " }, StringSplitOptions.None)[1].Trim();
@@ -96,11 +96,8 @@ namespace FoodFusion
                 {
                     return true;
                 }
-                else
-                {
-                    MessageBox.Show("No se encuentra el codigo");
-                }
             }
+            MessageBox.Show("No se encuentra el codigo");
             return false;
         }
     }

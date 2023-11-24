@@ -47,32 +47,32 @@ namespace FoodFusion
             string nombre = txtBUser.Text;
             string password = txtBPassword.Text;
 
-            if (File.Exists(database))
+            if (nombre == "admin" && password == "12345")
             {
-                if (nombre == "" && password == "")
-                {
-                    MessageBox.Show("Registrese, o revise sus credenciales");
-                }
-                else if (nombre == "admin" && password == "12345")
-                {
-                    frmControllerUser frm1 = new frmControllerUser();
-                    this.Visible = false;
-                    frm1.StartPosition = FormStartPosition.CenterParent;
-                    frm1.ShowDialog();
-                }
-                else if (nombre == "kitchen" && password == "56789")
-                {
-                    FormsAdmin frm2 = new FormsAdmin();
-                    this.Visible = false;
-                    frm2.ShowDialog();
-                }
-                else if (ValidarInicioSesion(nombre, password))
+                frmControllerUser frm1 = new frmControllerUser();
+                this.Visible = false;
+                frm1.StartPosition = FormStartPosition.CenterParent;
+                frm1.ShowDialog();
+            }
+            else if (nombre == "kitchen" && password == "56789")
+            {
+                FormsAdmin frm2 = new FormsAdmin();
+                this.Visible = false;
+                frm2.ShowDialog();
+            }
+            else if (nombre == "" && password == "")
+            {
+                MessageBox.Show("Registrese, o revise sus credenciales");
+            }
+            else if (File.Exists(database))
+            {
+                if (ValidarInicioSesion(nombre, password))
                 {
                     frmInicio frm3 = new frmInicio();
                     frm3.ShowDialog();
                     this.Visible = false;
                 }
-                else if (!ValidarInicioSesion(nombre, password))
+                else
                 {
                     MessageBox.Show("Contraseña o usuario incorrecto");
                     return;
