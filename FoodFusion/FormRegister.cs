@@ -124,7 +124,7 @@ namespace FoodFusion
 
         private void btnMinimizar_Click(object sender, EventArgs e)
         {
-
+            WindowState = FormWindowState.Minimized;
         }
     }
 }

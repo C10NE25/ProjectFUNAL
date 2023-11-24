@@ -56,7 +56,7 @@ namespace FoodFusion
         {
             string correo = txtBEmail.Text;
             string codigo = txtBCodigo.Text;
-            bool VerificationEmail = VerificarExistenciaCorreo(correo, out string contraseña);
+            bool VerificationEmail = VerificarExistenciaCorreo(correo, codigo, out string contraseña);
             bool VerificationCodigo = VerificarExistenciaCodigo(codigo);
 
             if (VerificationCodigo && VerificationEmail)
@@ -65,7 +65,7 @@ namespace FoodFusion
             }
         }
 
-        private bool VerificarExistenciaCorreo(string correo, out string contraseña)
+        private bool VerificarExistenciaCorreo(string correo, string codigo, out string contraseña)
         {
             //Lee todas las lineas del archivo
             string[] lineas = File.ReadAllLines(database);
@@ -73,7 +73,7 @@ namespace FoodFusion
             // Se busca el correo electronico
             foreach (string linea in lineas)
             {
-                if (linea.Contains($"Email: {correo}") && linea.Contains("Password: "))
+                if (linea.Contains($"Email: {correo}") && linea.Contains($"Codigo: {codigo}") && linea.Contains("Password: "))
                 {
                     // Obtiene la contraseña y la devuelve
                     contraseña = linea.Split(new[] { "Password: " }, StringSplitOptions.None)[1].Trim();
