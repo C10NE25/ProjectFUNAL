@@ -54,12 +54,6 @@ namespace FoodFusion
                 frm1.StartPosition = FormStartPosition.CenterParent;
                 frm1.ShowDialog();
             }
-            else if (nombre == "kitchen" && password == "56789")
-            {
-                FormsAdmin frm2 = new FormsAdmin();
-                this.Visible = false;
-                frm2.ShowDialog();
-            }
             else if (nombre == "" && password == "")
             {
                 MessageBox.Show("Registrese, o revise sus credenciales");
